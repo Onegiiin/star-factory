@@ -1,0 +1,25 @@
+.personContainer {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 2px;
+    border-style: solid;
+    border-color: gold;
+}
+
+.personContainer img{
+    max-width: 50%;
+    max-height: 100%;
+}
+
+.infoContainer {
+    display: flex;
+}
+
+.descriptionContainer{
+    margin-left: 40px;
+    display: grid;
+}
+
+.descriptionContainer p:first-of-type {
+}
