@@ -1,7 +1,9 @@
 import React from 'react';
 import Divider from '@mui/material/Divider';
 import IconButton from '@mui/material/IconButton';
-import Link from '@mui/material/Link';
+import {NavLink} from "react-router-dom";
+import Home from '../pages/Home';
+import logo from "../utils/logo.png";
 
 const footerStyle = {
     backgroundColor: '#f0f0f0',
@@ -16,13 +18,13 @@ const socialIconsStyle = {
     margin: '4px',
 };
 
-const Myfooter = () => {
+const MyFooter = () => {
     return (
         <footer style={footerStyle}>
             <div className="container">
                 <div className="row">
                     <div className="col-xs-6 d-flex align-items-center justify-content-between">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7YeEnh3Xdpq64TROsU93sSXRBqywsUd5o2Q&usqp=CAU" alt="Logo" />
+                        <img src={logo} alt="Logo" />
                     <div className="col-xs-6 d-flex align-items-center justify-content-end">
                         <div style={{ display: 'flex', flexDirection: 'column' }}>
                             <div style={{ display: 'flex' }}>
@@ -51,19 +53,19 @@ const Myfooter = () => {
                         <nav style={{ display: 'flex', justifyContent: 'center' }}>
                             <ul style={{ display: 'flex', listStyle: 'none', padding: 0 }}>
                                 <li style={{ margin: '0 8px' }}>
-                                    <Link href="/about" color="inherit">
+                                    <NavLink to="/home" color="inherit">
                                         Home
-                                    </Link>
+                                    </NavLink>
                                 </li>
                                 <li style={{ margin: '0 8px' }}>
-                                    <Link href="/services" color="inherit">
+                                    <NavLink to="/list" color="inherit">
                                         List
-                                    </Link>
+                                    </NavLink>
                                 </li>
                                 <li style={{ margin: '0 8px' }}>
-                                    <Link href="/contact" color="inherit">
+                                    <NavLink href="/contact" color="inherit">
                                         Devs
-                                    </Link>
+                                    </NavLink>
                                 </li>
                             </ul>
                         </nav>
@@ -74,4 +76,4 @@ const Myfooter = () => {
     );
 };
 
-export default Myfooter;
+export default MyFooter;
