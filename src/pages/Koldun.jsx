@@ -20,8 +20,8 @@ const info = {
 }
 
 const bio = [
-    {time: "2023", event: "пусто"},
-    {time: "2023", event: "недопуск из-за рпи"},
+    {time: "2023", event: ["пусто", "пусто2"]},
+    {time: "2023", event: ["недопуск из-за рпи"]},
 ];
 
 const photos = [

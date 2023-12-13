@@ -22,7 +22,14 @@ export default function CustomTimeline(props) {
                         />
                         <TimelineConnector />
                     </TimelineSeparator>
-                    <TimelineContent>{curr.event}</TimelineContent>
+                    <TimelineContent>
+                        {curr.event.map((part, partIndex) =>
+                            <React.Fragment key={partIndex}>
+                                {part}
+                                {partIndex !== curr.event.length - 1 && <br />}
+                            </React.Fragment>
+                        )}
+                    </TimelineContent>
                 </TimelineItem>
             )}
         </Timeline>
