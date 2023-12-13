@@ -4,14 +4,16 @@ import PersonalElements from "../components/PersonalElements";
 const Prihodko = () => {
     return (
         <div>
-            <PersonalElements info={info} itemData={itemData} video={video}/>
+            <PersonalElements info={info} photos={photos} video={video} bio={bio}/>
         </div>
     );
 };
 
 const info = [];
-const itemData = [];
+const bio = [];
+const photos = [];
 const video = "";
+
 
 
 export default Prihodko;

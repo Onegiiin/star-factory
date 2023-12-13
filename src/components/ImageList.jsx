@@ -3,7 +3,7 @@ import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
 import IconButton from '@mui/material/IconButton';
-import PlaceOutlinedIcon from "@mui/icons-material/PlaceOutlined";
+import PlaceOutlinedIcon from '@mui/icons-material/PlaceOutlined';
 import {useState} from "react";
 
 function srcset(image, width, height, rows = 1, cols = 1) {
@@ -68,7 +68,7 @@ export default function CustomImageList(props) {
                        rowHeight={400}
                        gap={2}
             >
-                {props.itemData.map((item) => {
+                {props.photos.map((item) => {
                     const cols = item.featured ? 2 : 1;
                     const rows = item.featured ? 2 : 1;
 

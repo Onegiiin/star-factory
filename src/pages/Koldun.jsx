@@ -4,7 +4,7 @@ import PersonalElements from "../components/PersonalElements";
 const Koldun = () => {
     return (
         <div>
-            <PersonalElements info={info} itemData={itemData} video={video}/>
+            <PersonalElements info={info} photos={photos} video={video} bio={bio}/>
         </div>
     );
 };
@@ -19,7 +19,12 @@ const info = {
     death: "настоящее время"
 }
 
-const itemData = [
+const bio = [
+    {time: "2023", event: "пусто"},
+    {time: "2023", event: "недопуск из-за рпи"},
+];
+
+const photos = [
     {
         img: 'https://www.vkpress.ru/upload/iblock/b68/b6852f425de87f7f1b6d355f391c8b21.jpg',
         title: 'Краснодар',
