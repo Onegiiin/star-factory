@@ -8,6 +8,7 @@ import Daineko from "../pages/Daineko";
 import Dubcova from "../pages/Dubcova";
 import Gagarina from "../pages/Gagarina";
 import Korni from "../pages/Korni";
+import List from "../pages/List"
 import Prihodko from "../pages/Prihodko";
 
 const AppRouter = () => {
@@ -15,6 +16,7 @@ const AppRouter = () => {
         <div>
             <Routes>
                 <Route path="/home" element={<Home/>}/>
+                <Route path = "/list" element ={<List/>}/>
                 <Route path="/koldun" element={<Koldun/>}/>
                 <Route path="/daineko" element={<Daineko/>}/>
                 <Route path="/dubcova" element={<Dubcova/>}/>

@@ -14,11 +14,11 @@ const WeeklyImage = () => {
             text: 'Карта для понедельника'
         },
         {
-            imageUrl: 'ссылка_на_картинку_для_воскресенья',
+            imageUrl: 'https://i.ytimg.com/vi/RCq05wJ7uck/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAUNzlqJiesgBhtkbokpuOZRjsJcQ',
             text: 'Карта для вторника'
         },
         {
-            imageUrl: 'ссылка_на_картинку_для_воскресенья',
+            imageUrl: 'https://i.ytimg.com/vi/RCq05wJ7uck/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAUNzlqJiesgBhtkbokpuOZRjsJcQ',
             text: 'Карта для среды'
         },
         {

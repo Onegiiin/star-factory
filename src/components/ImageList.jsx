@@ -3,7 +3,7 @@ import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
 import IconButton from '@mui/material/IconButton';
-import PlaceOutlinedIcon from '@mui/icons-material/PlaceOutlined';
+import PlaceOutlinedIcon from "@mui/icons-material/PlaceOutlined";
 import {useState} from "react";
 
 function srcset(image, width, height, rows = 1, cols = 1) {
