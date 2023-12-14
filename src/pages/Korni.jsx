@@ -10,12 +10,6 @@ const Korni = () => {
 
 };
 
-<<<<<<< HEAD
-const info = [];
-const bio = [];
-const photos = [];
-const video = "";
-=======
 const info = {
     name: "Гузель Хасанова",
     gender: "woman",
@@ -28,7 +22,6 @@ const info = {
 const bio = [];
 const photos = [];
 const video = "https://www.youtube.com/watch?v=GSjk94YPpaM";
->>>>>>> f2ce75c (.)
 
 
 

@@ -9,12 +9,6 @@ const Dubcova = () => {
     );
 };
 
-<<<<<<< HEAD
-const info = [];
-const bio = [];
-const photos = [];
-const video = "";
-=======
 const info = {
     name: "Ирина Дубцова",
     gender: "woman",
@@ -298,7 +292,6 @@ const photos = [
     }
 ];
 const video = "https://www.youtube.com/watch?v=OlbkXZGH0JI";
->>>>>>> f2ce75c (.)
 
 
 export default Dubcova;

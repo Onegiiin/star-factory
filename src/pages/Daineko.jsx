@@ -9,12 +9,6 @@ const Daineko = () => {
     );
 };
 
-<<<<<<< HEAD
-const info = [];
-const bio = [];
-const photos = [];
-const video = "";
-=======
 const info = {
     name: "Виктория Дайнеко",
     gender: "woman",
@@ -112,7 +106,6 @@ const photos = [
     }
 ];
 const video = "https://www.youtube.com/watch?v=BzjpBVVKKCE";
->>>>>>> f2ce75c (.)
 
 
 
