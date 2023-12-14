@@ -22,11 +22,20 @@ const styles = {
     text: {
         margin: 0,
     },
+    card: {
+        display: 'inline-block',
+    },
+    container: {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
 };
 
 const ClickableImageWithText = ({ imageUrl, text, onClick }) => {
     return (
-        <Card onClick={onClick}>
+        <div style={styles.container}>
+        <Card onClick={onClick} style={styles.card}>
             <div style={styles.cardContainer}>
                 <img src={imageUrl} alt="Image" style={styles.image} />
                 <div style={styles.textOverlay}>
@@ -35,9 +44,8 @@ const ClickableImageWithText = ({ imageUrl, text, onClick }) => {
                     </Typography>
                 </div>
             </div>
-            <CardContent>
-            </CardContent>
         </Card>
+            </div>
     );
 };
 

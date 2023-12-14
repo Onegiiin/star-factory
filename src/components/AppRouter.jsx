@@ -1,7 +1,6 @@
 import React from 'react';
 import {Navigate, Route, Routes} from "react-router-dom";
 import Home from "../pages/Home";
-import MyFooter from "./Myfooter";
 import Koldun from "../pages/Koldun";
 import Hasanova from "../pages/Hasanova";
 import Daineko from "../pages/Daineko";
@@ -26,7 +25,6 @@ const AppRouter = () => {
                 <Route path="/prihodko" element={<Prihodko/>}/>
                 <Route path="*" element={<Navigate to="/home"/>}/>
             </Routes>
-            <MyFooter/>
         </div>
     );
 };

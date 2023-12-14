@@ -1,15 +1,15 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Divider from '@mui/material/Divider';
 import IconButton from '@mui/material/IconButton';
-import {NavLink} from "react-router-dom";
-import Home from '../pages/Home';
-import logo from "../utils/logo.png";
+import {NavLink, useLocation} from "react-router-dom";
+import logo from "../Images/logo.png";
 
 const footerStyle = {
-    backgroundColor: '#f0f0f0',
+    backgroundColor: 'rgba(240, 240, 240, 0)',
     padding: '12px',
     marginTop: 'auto',
-};
+    backdropFilter: 'blur(6px)'
+}
 
 const socialIconsStyle = {
     fontSize: '2rem',
@@ -19,6 +19,19 @@ const socialIconsStyle = {
 };
 
 const MyFooter = () => {
+    const location = useLocation();
+
+    useEffect(() => {
+        if (location.hash) {
+            const element = document.querySelector(location.hash);
+
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        } else {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    }, [location]);
     return (
         <footer style={footerStyle}>
             <div className="container">
@@ -63,7 +76,7 @@ const MyFooter = () => {
                                     </NavLink>
                                 </li>
                                 <li style={{ margin: '0 8px' }}>
-                                    <NavLink href="/contact" color="inherit">
+                                    <NavLink to="/home#devs" color="inherit">
                                         Devs
                                     </NavLink>
                                 </li>

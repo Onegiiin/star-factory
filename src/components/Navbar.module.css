@@ -1,0 +1,8 @@
+.navbar {
+    background-color: transparent;
+    backdrop-filter: blur(6px);
+
+}
+.pads {
+    padding: 10px 50px;
+}

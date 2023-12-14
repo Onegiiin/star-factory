@@ -1,5 +1,6 @@
 import React from 'react';
-import { Card, CardContent, Typography } from '@mui/material';
+import { Card, Typography } from '@mui/material';
+import {NavLink} from "react-router-dom";
 
 const styles = {
     cardContainer: {
@@ -7,7 +8,7 @@ const styles = {
         maxWidth: 'fit-content',
     },
     image: {
-        width: '100%',
+        width: '500px',
         height: 'auto',
     },
     textOverlay: {
@@ -22,22 +23,32 @@ const styles = {
     text: {
         margin: 0,
     },
+    card: {
+        display: 'inline-block',
+    },
+    container: {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
 };
 
 const ListElem = ({ param, onClick }) => {
     return (
-        <Card onClick={onClick}>
+            <div style={styles.container}>
+        <Card sx={{ width: 'auto' }} style={styles.card} onClick={onClick}>
             <div style={styles.cardContainer}>
-                <img src={param.imageUrl} alt="Image" style={styles.image} />
+                <NavLink to={param.persUrl}>
+                <img src={param.imageUrl} alt="Артист" style={styles.image} />
+                </NavLink>
                 <div style={styles.textOverlay}>
                     <Typography variant="body1" style={styles.text}>
                         {param.text}
                     </Typography>
                 </div>
             </div>
-            <CardContent>
-            </CardContent>
         </Card>
+            </div>
     );
 };
 
