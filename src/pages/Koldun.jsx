@@ -1,5 +1,13 @@
 import React from 'react';
 import PersonalElements from "../components/PersonalElements";
+import image1 from "../images/koldun/1.jpg";
+import image2 from "../images/koldun/2.jpg";
+import image3 from "../images/koldun/3.jpg";
+import image4 from "../images/koldun/4.jpg";
+import image5 from "../images/koldun/5.jpg";
+import image6 from "../images/koldun/6.jpg";
+import image7 from "../images/koldun/7.jpg";
+import image8 from "../images/koldun/8.jpg";
 
 const Koldun = () => {
     return (
@@ -131,37 +139,37 @@ const bio = [
 
 const photos = [
     {
-        img: '../images/koldun/1.jpg',
+        img: image1,
         title: 'Краснодар',
         featured: true,
     },
     {
-        img: '../images/koldun/2.jpg',
+        img: image2,
         title: 'Фабрика звезд',
     },
     {
-        img: '../images/koldun/3.jpg',
+        img: image3,
         title: 'Авторадио',
     },
     {
-        img: '../images/koldun/4.jpg',
+        img: image4,
         title: 'Золотой граммофон',
     },
     {
-        img: '../images/koldun/5.jpg',
+        img: image5,
         title: 'Гомель',
     },
     {
-        img: '../images/koldun/6.jpg',
+        img: image6,
         title: 'Русское радио',
         featured: true,
     },
     {
-        img: '../images/koldun/7.jpg',
+        img: image7,
         title: 'Нижневартовск',
     },
     {
-        img: '../images/koldun/8.jpg',
+        img: image8,
         title: 'Евровидение',
     }
 ];
