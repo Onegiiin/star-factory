@@ -19,6 +19,8 @@
 .descriptionContainer{
     margin-left: 40px;
     display: grid;
+    overflow-y: scroll;
+    height: 400px;
 }
 
 .descriptionContainer p:first-of-type {
