@@ -22,6 +22,7 @@ export default function CustomTimeline(props) {
                         />
                         <TimelineConnector />
                     </TimelineSeparator>
+<<<<<<< HEAD
                     <TimelineContent>
                         {curr.event.map((part, partIndex) =>
                             <React.Fragment key={partIndex}>
@@ -30,6 +31,9 @@ export default function CustomTimeline(props) {
                             </React.Fragment>
                         )}
                     </TimelineContent>
+=======
+                    <TimelineContent>{curr.event}</TimelineContent>
+>>>>>>> f2ce75c (.)
                 </TimelineItem>
             )}
         </Timeline>
