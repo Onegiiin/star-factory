@@ -9,6 +9,13 @@ const Prihodko = () => {
     );
 };
 
+<<<<<<< HEAD
+const info = [];
+const bio = [];
+const photos = [];
+const video = "";
+
+=======
 const info = {
     name: "Анастасия Приходько",
     gender: "woman",
@@ -80,6 +87,7 @@ const bio = [
 ];
 const photos = [];
 const video = "https://www.youtube.com/watch?v=iEPE-vbWqWw";
+>>>>>>> f2ce75c (.)
 
 
 export default Prihodko;

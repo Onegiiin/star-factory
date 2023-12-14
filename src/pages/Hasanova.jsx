@@ -10,6 +10,12 @@ const Hasanova = () => {
 
 };
 
+<<<<<<< HEAD
+const info = [];
+const bio = [];
+const photos = [];
+const video = "";
+=======
 const info = {
     name: "Гузель Хасанова",
     gender: "woman",
@@ -95,6 +101,7 @@ const photos = [
     }
 ];
 const video = "https://www.youtube.com/watch?v=jBmM53g88t4";
+>>>>>>> f2ce75c (.)
 
 
 export default Hasanova;

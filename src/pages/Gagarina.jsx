@@ -9,6 +9,12 @@ const Gagarina = () => {
     );
 };
 
+<<<<<<< HEAD
+const info = [];
+const bio = [];
+const photos = [];
+const video = "";
+=======
 const info = {
     name: "Полина Гагарина",
     gender: "woman",
@@ -223,6 +229,7 @@ const photos = [
 ];
 const video = "https://www.youtube.com/watch?v=V94vZTNkLng";
 
+>>>>>>> f2ce75c (.)
 
 
 
