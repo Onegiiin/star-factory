@@ -1,5 +1,14 @@
+
 import React from 'react';
 import PersonalElements from "../components/PersonalElements";
+import image1 from "../images/gagarina/1.jpg"
+import image2 from "../images/gagarina/2.jpg"
+import image3 from "../images/gagarina/3.jpg"
+import image4 from "../images/gagarina/4.jpg"
+import image5 from "../images/gagarina/5.jpg"
+import image6 from "../images/gagarina/6.jpg"
+import image7 from "../images/gagarina/7.jpg"
+import main from "../images/gagarina/main.jpg"
 
 const Gagarina = () => {
     return (
@@ -12,7 +21,7 @@ const Gagarina = () => {
 const info = {
     name: "Полина Гагарина",
     gender: "woman",
-    mainImg: "../images/gagarina/main.jpg",
+    mainImg: main,
     season: 3,
     shortInfo: "Полина Сергеевна Гагарина — российская эстрадная певица, актриса кино, телевидения, озвучивания и дубляжа, композитор и фотомодель.",
     born: "27 марта 1987",
@@ -191,37 +200,37 @@ const bio = [
 ];
 const photos = [
     {
-        img: "../images/gagarina/1.jpg",
+        img: image1,
         title: 'Победа на RU.TV',
         featured: true,
     },
     {
-        img: '../images/gagarina/2.png',
+        img: image2,
         title: 'Евровиденье-2015',
     },
     {
-        img: '../images/gagarina/3.png',
+        img: image3,
         title: 'Новосибирск',
     },
     {
-        img: '../images/gagarina/4.png',
+        img: image4,
         title: 'Челябинск',
     },
     {
-        img: '../images/gagarina/5.png',
+        img: image5,
         title: 'Минск',
     },
     {
-        img: '../images/gagarina/6.png',
-        title: 'Шоу \"Голос\"',
+        img: image6,
+        title: 'Шоу "Голос"',
     },
     {
-        img: '../images/gagarina/7.png',
-        title: 'Музыкальное шоу \"Навсегда\"',
+        img: image7,
+        title: 'Музыкальное шоу "Навсегда"',
     }
 
 ];
-const video = "https://www.youtube.com/watch?v=V94vZTNkLng";
+const video = "https://www.youtube.com/embed/V94vZTNkLng?si=xm7tSjODQGoFScXK";
 
 
 

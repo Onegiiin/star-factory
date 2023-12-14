@@ -1,13 +1,14 @@
 import React from 'react';
 import PersonalElements from "../components/PersonalElements";
-import image1 from "../images/koldun/1.jpg";
-import image2 from "../images/koldun/2.jpg";
-import image3 from "../images/koldun/3.jpg";
-import image4 from "../images/koldun/4.jpg";
-import image5 from "../images/koldun/5.jpg";
-import image6 from "../images/koldun/6.jpg";
-import image7 from "../images/koldun/7.jpg";
-import image8 from "../images/koldun/8.jpg";
+import image1 from "../images/koldun/1.jpg"
+import image2 from "../images/koldun/2.jpg"
+import image3 from "../images/koldun/3.jpg"
+import image4 from "../images/koldun/4.jpg"
+import image5 from "../images/koldun/5.jpg"
+import image6 from "../images/koldun/6.jpg"
+import image7 from "../images/koldun/7.jpg"
+import image8 from "../images/koldun/8.jpg"
+import main from "../images/koldun/main.jpg"
 
 const Koldun = () => {
     return (
@@ -20,7 +21,7 @@ const Koldun = () => {
 const info = {
     name: "Дмитрий Колдун",
     gender: "man",
-    mainImg: "../images/koldun/main.jpg",
+    mainImg: main,
     season: 6,
     shortInfo: "Дми́трий Алекса́ндрович Колду́н — белорусский певец, поэт и композитор. Представлял Беларусь на конкурсе Евровидение 2007 года с песней «Work Your Magic», заняв 6-е место (лучший результат Беларуси за всё время участия в конкурсе).",
     born: "11 июня 1985",
@@ -175,5 +176,6 @@ const photos = [
 ];
 
 const video = "https://www.youtube.com/embed/Igp6p7sTT_4?si=lkfU-1tx6RqDm0VI";
+
 
 export default Koldun;

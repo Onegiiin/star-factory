@@ -1,5 +1,13 @@
 import React from 'react';
 import PersonalElements from "../components/PersonalElements";
+import image1 from "../images/daineko/1.jpg"
+import image2 from "../images/daineko/2.jpg"
+import image3 from "../images/daineko/3.jpg"
+import image4 from "../images/daineko/4.jpg"
+import image5 from "../images/daineko/5.jpg"
+import image6 from "../images/daineko/6.jpg"
+import image7 from "../images/daineko/7.jpg"
+import main from "../images/daineko/main.jpg"
 
 const Daineko = () => {
     return (
@@ -12,7 +20,7 @@ const Daineko = () => {
 const info = {
     name: "Виктория Дайнеко",
     gender: "woman",
-    mainImg: "../images/daineko/main.jpg",
+    mainImg: main,
     season: 1,
     shortInfo: "Викто́рия Петро́вна Дайне́ко — российская певица и актриса. Победительница «Фабрики звёзд-5» (2004) и «Фабрики звёзд. Возвращение» (2011).",
     born: "12 мая 1987",
@@ -96,16 +104,37 @@ const bio = [
 ];
 const photos = [
     {
-        img: '../images/daineko/1.png',
+        img: image1,
         title: 'Фабрика звезд',
         featured: true,
     },
     {
-        img: '../images/daineko/2.png',
+        img: image2,
         title: 'Три аккорда',
-    }
+    },
+    {
+        img: image3,
+        title: 'Концерт "Русское Рождество"',
+    },
+    {
+        img: image4,
+        title: 'Москва',
+    },
+    {
+        img: image5,
+        title: 'Воронеж',
+    },
+    {
+        img: image6,
+        title: 'Тольятти',
+    },
+    {
+        img: image7,
+        title: 'Санкт-Петербург',
+    },
+
 ];
-const video = "https://www.youtube.com/watch?v=BzjpBVVKKCE";
+const video = "https://www.youtube.com/embed/BzjpBVVKKCE?si=GokmUeqQfqlJq8u9";
 
 
 

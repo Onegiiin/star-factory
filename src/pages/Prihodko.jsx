@@ -1,5 +1,13 @@
 import React from 'react';
 import PersonalElements from "../components/PersonalElements";
+import image1 from "../images/prihodko/1.jpg"
+import image2 from "../images/prihodko/2.jpg"
+import image3 from "../images/prihodko/3.jpg"
+import image4 from "../images/prihodko/4.jpg"
+import image5 from "../images/prihodko/5.jpg"
+import image6 from "../images/prihodko/6.jpg"
+import image7 from "../images/prihodko/7.jpg"
+import main from "../images/prihodko/main.jpg"
 
 const Prihodko = () => {
     return (
@@ -12,7 +20,7 @@ const Prihodko = () => {
 const info = {
     name: "Анастасия Приходько",
     gender: "woman",
-    mainImg: "../images/prihodko/main.jpg",
+    mainImg: main,
     season: 4,
     shortInfo: "Анастаси́я Константи́новна Прихо́дько — украинская певица, автор песен, общественный и политический деятель, заслуженная артистка Украины (2017).",
     born: "21 апреля 1987",
@@ -78,8 +86,33 @@ const bio = [
         ]
     }
 ];
-const photos = [];
-const video = "https://www.youtube.com/watch?v=iEPE-vbWqWw";
+const photos = [
+    {
+        img: image1,
+        title: 'Москва',
+    },
+    {
+        img: image2,
+    },
+    {
+        img: image3,
+    },
+    {
+        img: image4,
+        title: 'Евровиденье-2011'
+    },
+    {
+        img: image5,
+    },
+    {
+        img: image6,
+    },
+    {
+        img: image7,
+        title: 'Киев'
+    }
+];
+const video = "https://www.youtube.com/embed/iEPE-vbWqWw?si=oBm9j7uIPGNitvch";
 
 
 export default Prihodko;

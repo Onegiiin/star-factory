@@ -1,5 +1,13 @@
 import React from 'react';
 import PersonalElements from "../components/PersonalElements";
+import image1 from "../images/dubcova/1.jpg"
+import image2 from "../images/dubcova/2.jpg"
+import image3 from "../images/dubcova/3.jpg"
+import image4 from "../images/dubcova/4.jpg"
+import image5 from "../images/dubcova/5.jpg"
+import image6 from "../images/dubcova/6.jpg"
+import image7 from "../images/dubcova/7.jpg"
+import main from "../images/dubcova/main.jpg"
 
 const Dubcova = () => {
     return (
@@ -12,7 +20,7 @@ const Dubcova = () => {
 const info = {
     name: "Ирина Дубцова",
     gender: "woman",
-    mainImg: "../images/dubcova/main.jpg",
+    mainImg: main,
     season: 2,
     shortInfo: "Ирина Викторовна Дубцова — российская певица, поэтесса и композитор, бывшая солистка группы «Девочки» (1999—2001). Исполнительница собственных песен (как сольных, так и совместных), выпускница и победительница «Фабрики звёзд — 4», финалистка проекта «Фабрика звёзд. Возвращение».",
     born: "14 февраля 1982",
@@ -261,37 +269,37 @@ const bio = [
 ];
 const photos = [
     {
-        img: '../images/dubcova/1.png',
+        img: image1,
         title: 'Вологда',
         featured: true,
     },
     {
-        img: '../images/dubcova/2.png',
+        img: image2,
         title: 'Гомель',
     },
     {
-        img: '../images/dubcova/3.png',
+        img: image3,
         title: 'Сочи',
     },
     {
-        img: '../images/dubcova/4.png',
+        img: image4,
         title: 'Фабрика звезд',
     },
     {
-        img: '../images/dubcova/5.png',
+        img: image5,
         title: 'Омск',
     },
     {
-        img: '../images/dubcova/6.png',
+        img: image6,
         title: 'Воронеж',
         featured: true,
     },
     {
-        img: '../images/dubcova/7.png',
+        img: image7,
         title: 'Телесериал "Куба"',
     }
 ];
-const video = "https://www.youtube.com/watch?v=OlbkXZGH0JI";
+const video = "https://www.youtube.com/embed/OlbkXZGH0JI?si=R7pd6PB9VZ9kIcWg";
 
 
 export default Dubcova;

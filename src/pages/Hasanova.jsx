@@ -1,5 +1,13 @@
 import React from 'react';
 import PersonalElements from "../components/PersonalElements";
+import image1 from "../images/hasanova/1.jpg"
+import image2 from "../images/hasanova/2.jpg"
+import image3 from "../images/hasanova/3.jpg"
+import image4 from "../images/hasanova/4.jpg"
+import image5 from "../images/hasanova/5.jpg"
+import image6 from "../images/hasanova/6.jpg"
+import image7 from "../images/hasanova/7.jpg"
+import main from "../images/hasanova/main.jpg"
 
 const Hasanova = () => {
     return (
@@ -13,7 +21,7 @@ const Hasanova = () => {
 const info = {
     name: "Гузель Хасанова",
     gender: "woman",
-    mainImg: "../images/hasanova/main.jpg",
+    mainImg: main,
     season: 4,
     shortInfo: "Гузель Хасанова — яркая и талантливая певица, заявившая о себе в качестве победительницы российского вокального проекта «Новая Фабрика звезд». С тех пор она регулярно радует поклонников новыми хитами, которые никого не оставляют равнодушным.",
     born: "28 января 1993",
@@ -66,35 +74,33 @@ const bio = [
 ];
 const photos = [
     {
-        img: '../images/hasanova/1.png',
-        title: '\"Х-фактор\"',
+        img: image1,
+        title: '"Х-фактор"',
     },
     {
-        img: '../images/hasanova/2.png',
-        title: '\"Новая фабрика звезд\"',
+        img: image2,
+        title: '"Новая фабрика звезд"',
     },
     {
-        img: '../images/hasanova/3.png',
-        title: '\"Х-фактор\"',
+        img: image3,
     },
     {
-        img: '../images/hasanova/4.png',
-        title: '\"Х-фактор\"',
+        img: image4,
+        title: 'Москва'
     },
     {
-        img: '../images/hasanova/5.png',
-        title: '\"Х-фактор\"',
+        img: image5,
+        title: 'Ульяновск'
     },
     {
-        img: '../images/hasanova/6.png',
-        title: '\"Х-фактор\"',
+        img: image6,
     },
     {
-        img: '../images/hasanova/7.png',
-        title: '\"Х-фактор\"',
+        img: image7,
+        title: 'Сочи'
     }
 ];
-const video = "https://www.youtube.com/watch?v=jBmM53g88t4";
+const video = "https://www.youtube.com/embed/jBmM53g88t4?si=5-ui1Q6ttM-idYuy";
 
 
 export default Hasanova;
