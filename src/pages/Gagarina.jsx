@@ -9,11 +9,16 @@ import image5 from "../images/gagarina/5.jpg"
 import image6 from "../images/gagarina/6.jpg"
 import image7 from "../images/gagarina/7.jpg"
 import main from "../images/gagarina/main.jpg"
+import classes from "./Gagarina.module.css"
+import Navbar from "../components/Navbar";
+import Myfooter from "../components/Myfooter";
 
 const Gagarina = () => {
     return (
-        <div>
+        <div className={classes.bgImg}>
+            <Navbar/>
             <PersonalElements info={info} photos={photos} video={video} bio={bio}/>
+            <Myfooter/>
         </div>
     );
 };

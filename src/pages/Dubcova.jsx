@@ -8,11 +8,16 @@ import image5 from "../images/dubcova/5.jpg"
 import image6 from "../images/dubcova/6.jpg"
 import image7 from "../images/dubcova/7.jpg"
 import main from "../images/dubcova/main.jpg"
+import classes from "./Dubcova.module.css"
+import Navbar from "../components/Navbar";
+import Myfooter from "../components/Myfooter";
 
 const Dubcova = () => {
     return (
-        <div>
+        <div className={classes.bgImg}>
+            <Navbar/>
             <PersonalElements info={info} photos={photos} video={video} bio={bio}/>
+            <Myfooter/>
         </div>
     );
 };

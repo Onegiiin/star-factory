@@ -9,11 +9,16 @@ import image6 from "../images/koldun/6.jpg"
 import image7 from "../images/koldun/7.jpg"
 import image8 from "../images/koldun/8.jpg"
 import main from "../images/koldun/main.jpg"
+import classes from "./Koldun.module.css"
+import Navbar from "../components/Navbar";
+import Myfooter from "../components/Myfooter";
 
 const Koldun = () => {
     return (
-        <div>
+        <div className={classes.bgImg}>
+            <Navbar/>
             <PersonalElements info={info} photos={photos} video={video} bio={bio}/>
+            <Myfooter/>
         </div>
     );
 };

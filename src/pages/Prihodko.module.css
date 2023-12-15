@@ -1,0 +1,12 @@
+.bgImg {
+    justify-content: center;
+    align-items: center;
+    background-image: url("../images/prigodkoback.png");
+    background-size: 1600px;
+    background-repeat: repeat-y;
+    background-position: top;
+    position: center;
+    top:0;
+    background-color: #0c1117;
+    z-index: -1;
+}

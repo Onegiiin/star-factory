@@ -8,11 +8,16 @@ import image5 from "../images/hasanova/5.jpg"
 import image6 from "../images/hasanova/6.jpg"
 import image7 from "../images/hasanova/7.jpg"
 import main from "../images/hasanova/main.jpg"
+import classes from "./Hasanova.module.css"
+import Navbar from "../components/Navbar";
+import Myfooter from "../components/Myfooter";
 
 const Hasanova = () => {
     return (
-        <div>
+        <div className={classes.bgImg}>
+            <Navbar/>
             <PersonalElements info={info} photos={photos} video={video} bio={bio}/>
+            <Myfooter/>
         </div>
     );
 

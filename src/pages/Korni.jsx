@@ -8,11 +8,16 @@ import PersonalElements from "../components/PersonalElements";
  import image6 from "../images/korni/6.jpg"
  import image7 from "../images/korni/7.jpg"
 import main from "../images/korni/main.jpg"
+import classes from "./Korni.module.css"
+import Navbar from "../components/Navbar";
+import Myfooter from "../components/Myfooter";
 
 const Korni = () => {
     return (
-        <div>
+        <div className={classes.bgImg}>
+            <Navbar/>
             <PersonalElements info={info} photos={photos} video={video} bio={bio}/>
+            <Myfooter/>
         </div>
     );
 

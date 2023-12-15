@@ -8,11 +8,16 @@ import image5 from "../images/daineko/5.jpg"
 import image6 from "../images/daineko/6.jpg"
 import image7 from "../images/daineko/7.jpg"
 import main from "../images/daineko/main.jpg"
+import classes from "./Daineko.module.css"
+import Navbar from "../components/Navbar";
+import Myfooter from "../components/Myfooter";
 
 const Daineko = () => {
     return (
-        <div>
+        <div className={classes.bgImg}>
+            <Navbar/>
             <PersonalElements info={info} photos={photos} video={video} bio={bio}/>
+            <Myfooter/>
         </div>
     );
 };

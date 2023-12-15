@@ -8,11 +8,16 @@ import image5 from "../images/prihodko/5.jpg"
 import image6 from "../images/prihodko/6.jpg"
 import image7 from "../images/prihodko/7.jpg"
 import main from "../images/prihodko/main.jpg"
+import classes from "./Prihodko.module.css"
+import Navbar from "../components/Navbar";
+import Myfooter from "../components/Myfooter";
 
 const Prihodko = () => {
     return (
-        <div>
+        <div className={classes.bgImg}>
+            <Navbar/>
             <PersonalElements info={info} photos={photos} video={video} bio={bio}/>
+            <Myfooter/>
         </div>
     );
 };
