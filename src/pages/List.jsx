@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react';
+import React, { useMemo, useState, useRef, useEffect} from 'react';
 import CardList from '../components/Cardlist';
 import MyInput from '../components/UI/MyInput/Myinput';
 import classes from "./List.module.css";
@@ -40,6 +40,7 @@ const ListFin = () => {
     const [hasSearchResults, setHasSearchResults] = useState(true);
     const [searchQuery, setSearchQuery] = useState('');
     const [cards, setCards] = useState([]);
+    const emptyResultsRef = useRef(null);
 
     const importImages = async () => {
         const importedImages = await Promise.all(
@@ -70,6 +71,23 @@ const ListFin = () => {
         return filteredCards;
     }, [searchQuery, cards]);
 
+    useEffect(() => {
+        const handleResize = () => {
+            if (!hasSearchResults && emptyResultsRef.current) {
+                const windowHeight = window.innerHeight;
+                const emptyResultsHeight = emptyResultsRef.current.clientHeight;
+                const marginTopValue = (windowHeight - emptyResultsHeight) / 2;
+                emptyResultsRef.current.style.marginTop = `${marginTopValue}px`;
+            }
+        };
+
+        handleResize(); // Вызываем сразу для начальной установки
+
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, [hasSearchResults]);
 
     return (
         <div className={`${classes.bgImg}`}>
@@ -87,23 +105,25 @@ const ListFin = () => {
                         {hasSearchResults ? (
                             <CardList cards={sortedSearchList} />
                         ) : (
+                            <div>
+                                <span className={classes.emptyResults} style={{ position: 'absolute', top: '50%', transform: 'translateY(-50%)' }}>
+                                    Результаты не найдены
+                                </span>
                             <div
+                                ref={emptyResultsRef}
                                 style={{
-                                    marginTop: '377px',
                                     display: 'flex',
                                     justifyContent: 'left',
                                     alignItems: 'center',
-                                    height: '50%'
-                                }}
-                            >
-                                <span style={{
-                                    marginTop: "-250px",
-                                    marginLeft:"38px",
-                                    fontFamily: "Comfortaa",
+                                    height: '50%',
+                                    fontFamily: 'Comfortaa',
                                     fontSize: '60px',
                                     letterSpacing: '0px',
                                     color: '#f4eaff',
-                                }}>Результаты не найдены</span>
+                                    position: 'relative'
+                                }}
+                            >
+                            </div>
                             </div>
                         )}
                     </div>

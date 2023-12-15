@@ -39,6 +39,22 @@
     color: #999;
 }
 
-.foot {
+.contentContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
 
+.emptyResults {
+    margin-left: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    font-family: 'Comfortaa';
+    font-size: 60px;
+    letter-spacing: 0px;
+    color: #f4eaff;
+    margin-top: 20px;
 }
