@@ -1,8 +1,33 @@
-.navbar {
+.nvbr {
+    --bs-navbar-padding-x: 20px;
     background-color: transparent;
     backdrop-filter: blur(6px);
+    width: 1600px;
+    object-position: center;
+    position: static;
+    justify-content: center;
+    display: flow;
+    left: 160px;
 
+}
+
+.txt{
+    font-family: Comfortaa;
+    font-size: 24px;
+    color: gold;
 }
 .pads {
     padding: 10px 50px;
 }
+
+.nvb {
+    --bs-btn-color: #f4eaff;
+    --bs-navbar-color: rgba(255, 255, 255, 0.55);
+    --bs-navbar-hover-color: rgba(255, 255, 255, 0.75);
+    --bs-navbar-disabled-color: rgba(255, 255, 255, 0.25);
+    --bs-navbar-active-color: #f4eaff;
+    --bs-navbar-brand-color: #fff;
+    --bs-navbar-brand-hover-color: #fff;
+    --bs-navbar-toggler-border-color: rgba(255, 255, 255, 0.1);
+}
+

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Carousel } from 'bootstrap';
-import devs from './../../../Images/devs.jpg';
+import devs from '../../../images/devs.jpg';
 import Avatar from 'react-avatar';
 import classes from './Gitprof.module.css';
 

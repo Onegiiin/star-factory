@@ -2,7 +2,7 @@ import React, {useEffect} from 'react';
 import Divider from '@mui/material/Divider';
 import IconButton from '@mui/material/IconButton';
 import {NavLink, useLocation} from "react-router-dom";
-import logo from "../Images/logo.png";
+import logo from "../images/logo.png";
 
 const footerStyle = {
     backgroundColor: 'rgba(240, 240, 240, 0)',

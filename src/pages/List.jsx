@@ -42,7 +42,7 @@ const ListFin = () => {
 
     const importImages = async () => {
         const importedImages = await Promise.all(
-            imagePaths.map(imagePath => import(`../Images/${imagePath}`))
+            imagePaths.map(imagePath => import(`../images/${imagePath}`))
         );
         return importedImages.map(module => module.default);
     };

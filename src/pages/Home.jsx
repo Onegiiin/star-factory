@@ -12,8 +12,8 @@ function Home() {
     return (
         <div className={`${classes.bgImg}`}>
             <Navbar/>
-            <WeeklyImage/>
-            <ScrollableText/>
+            <WeeklyImage classname={classes.zagal}/>
+            <ScrollableText classname={classes.srcol}/>
             <MyCustomCarousel/>
             <MyFooter/>
         </div>

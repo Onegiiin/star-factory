@@ -4,13 +4,13 @@ import {NavLink} from "react-router-dom";
 
 
 const images = {
-    Card1: import('../Images/Card1.jpg'),
-    Card2: import('../Images/Card2.jpg'),
-    Card3: import('../Images/Card3.jpg'),
-    Card4: import('../Images/Card4.jpg'),
-    Card5: import('../Images/Card5.jpg'),
-    Card6: import('../Images/Card6.jpg'),
-    Card7: import('../Images/Card7.jpg')
+    Card1: import('../images/Card1.jpg'),
+    Card2: import('../images/Card2.jpg'),
+    Card3: import('../images/Card3.jpg'),
+    Card4: import('../images/Card4.jpg'),
+    Card5: import('../images/Card5.jpg'),
+    Card6: import('../images/Card6.jpg'),
+    Card7: import('../images/Card7.jpg')
 };
 
 const WeeklyImage = () => {
