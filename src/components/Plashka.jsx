@@ -1,15 +1,16 @@
 import React from 'react';
 import ClickableImageWithText from './ClickableImageWithText';
+import {NavLink} from "react-router-dom";
 
 
 const images = {
-    Card1: import('../utils/Card1.jpg'),
-    Card2: import('../utils/Card2.jpg'),
-    Card3: import('../utils/Card3.jpg'),
-    Card4: import('../utils/Card4.jpg'),
-    Card5: import('../utils/Card5.jpg'),
-    Card6: import('../utils/Card6.jpg'),
-    Card7: import('../utils/Card7.jpg')
+    Card1: import('../Images/Card1.jpg'),
+    Card2: import('../Images/Card2.jpg'),
+    Card3: import('../Images/Card3.jpg'),
+    Card4: import('../Images/Card4.jpg'),
+    Card5: import('../Images/Card5.jpg'),
+    Card6: import('../Images/Card6.jpg'),
+    Card7: import('../Images/Card7.jpg')
 };
 
 const WeeklyImage = () => {
@@ -18,31 +19,38 @@ const WeeklyImage = () => {
     const imagesData = [
         {
             imageUrl: images.Card1,
-            text: 'Группа "Корни"'
+            text: 'Группа "Корни"',
+            persUrl: '/korni'
         },
         {
             imageUrl: images.Card2,
-            text: 'Полина Гагарина'
+            text: 'Полина Гагарина',
+            persUrl: '/gagarina'
         },
         {
             imageUrl: images.Card3,
-            text: 'Ирина Дубцова'
+            text: 'Ирина Дубцова',
+            persUrl: '/dubcova'
         },
         {
             imageUrl: images.Card4,
-            text: 'Дмитрий Колдун'
+            text: 'Дмитрий Колдун',
+            persUrl: '/koldun'
         },
         {
             imageUrl: images.Card5,
-            text: 'Анастасия Приходько'
+            text: 'Анастасия Приходько',
+            persUrl: '/prihodko'
         },
         {
             imageUrl: images.Card6,
-            text: 'Виктория Дайнеко'
+            text: 'Виктория Дайнеко',
+            persUrl: '/daineko'
         },
         {
             imageUrl: images.Card7,
-            text: 'Гузель Хасанова'
+            text: 'Гузель Хасанова',
+            persUrl: '/hasanova'
         }
     ];
 
@@ -56,7 +64,8 @@ const WeeklyImage = () => {
         const resolvedImage = await getImage(currentImage);
         return {
             imageUrl: resolvedImage,
-            text: imagesData[currentDay].text
+            text: imagesData[currentDay].text,
+            persUrl: imagesData[currentDay].persUrl
         };
     };
 
@@ -73,12 +82,13 @@ const WeeklyImage = () => {
     }
 
     return (
-        <div>
+        <div id="homepage">
             <h2>Артист дня</h2>
+            <NavLink to={currentImageData.persUrl}>
             <ClickableImageWithText imageUrl={currentImageData.imageUrl} text={currentImageData.text} />
+            </NavLink>
         </div>
     );
 };
 
 export default WeeklyImage;
-

@@ -1,6 +1,9 @@
 import React, { useMemo, useState } from 'react';
-import CardList from "../components/Cardlist";
-import MyInput from "../components/UI/MyInput/Myinput";
+import CardList from '../components/Cardlist';
+import MyInput from '../components/UI/MyInput/Myinput';
+import classes from "./List.module.css";
+import Navbar from "../components/Navbar";
+import MyFooter from "../components/Myfooter";
 
 const imagePaths = [
     'Card1.jpg',
@@ -22,13 +25,24 @@ const artistNames = [
     'Гузель Хасанова'
 ];
 
-const List = () => {
+const persUrls = [
+    '/korni',
+    '/gagarina',
+    '/dubcova',
+    '/koldun',
+    '/prihodko',
+    '/daineko',
+    '/hasanova'
+];
+
+
+const ListFin = () => {
     const [searchQuery, setSearchQuery] = useState('');
     const [cards, setCards] = useState([]);
 
     const importImages = async () => {
         const importedImages = await Promise.all(
-            imagePaths.map(imagePath => import(`../utils/${imagePath}`))
+            imagePaths.map(imagePath => import(`../Images/${imagePath}`))
         );
         return importedImages.map(module => module.default);
     };
@@ -38,27 +52,36 @@ const List = () => {
             const initialCards = loadedImages.map((imageUrl, index) => ({
                 id: index + 1,
                 text: artistNames[index],
-                imageUrl: imageUrl
+                imageUrl: imageUrl,
+                persUrl: persUrls[index]
             }));
             setCards(initialCards);
         });
     }, []);
 
     const sortedSearchList = useMemo(() => {
-        return cards.filter(card => card.text.toLowerCase().includes(searchQuery.toLowerCase()));
+        return cards.filter(card =>
+            card.text.toLowerCase().includes(searchQuery.toLowerCase())
+        );
     }, [searchQuery, cards]);
 
     return (
-        <div>
-            <MyInput
-                value={searchQuery}
-                placeholder="Поиск..."
-                onChange={e => setSearchQuery(e.target.value)}
-            />
-            <h2>Победители</h2>
-            <CardList cards={sortedSearchList} />
+        <div className={`${classes.bgImg}`}>
+            <Navbar/>
+                <MyInput
+                    value={searchQuery}
+                    placeholder="Поиск..."
+                    onChange={e => setSearchQuery(e.target.value)}
+                />
+                <h2>Победители</h2>
+                <div className={classes.fixedContainer}>
+                    <div className={classes.scrollableContent}>
+                        <CardList cards={sortedSearchList} />
+                    </div>
+                </div>
+            <MyFooter/>
         </div>
     );
 };
 
-export default List;
+export default ListFin;

@@ -3,13 +3,19 @@ import '../styles/App.css'
 import WeeklyImage from "../components/Plashka";
 import ScrollableText from "../components/ScrollableText";
 import MyCustomCarousel from "../components/UI/Slider/Gitprof";
+import classes from "./Home.module.css";
+import MyFooter from "../components/Myfooter";
+import Navbar from "../components/Navbar";
+
 
 function Home() {
     return (
-        <div className="App">
+        <div className={`${classes.bgImg}`}>
+            <Navbar/>
             <WeeklyImage/>
             <ScrollableText/>
             <MyCustomCarousel/>
+            <MyFooter/>
         </div>
     );
 }

@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Carousel } from 'bootstrap';
-import devs from '../../../utils/devs.jpg';
-import Avatar from 'react-avatar'
-import classes from './Gitprof.module.css'
+import devs from './../../../Images/devs.jpg';
+import Avatar from 'react-avatar';
+import classes from './Gitprof.module.css';
 
 const MyCustomCarousel = () => {
     useEffect(() => {
@@ -17,7 +17,7 @@ const MyCustomCarousel = () => {
     }, []);
 
     return (
-        <div>
+        <div id = "devs" >
             <h2>Артист дня</h2>
             <div id="myCarousel" className="carousel slide carousel-fade" data-bs-ride="true">
                 <div className="carousel-inner ">
