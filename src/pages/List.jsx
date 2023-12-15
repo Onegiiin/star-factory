@@ -89,7 +89,7 @@ const ListFin = () => {
                         ) : (
                             <div
                                 style={{
-                                    marginTop: '435px',
+                                    marginTop: '377px',
                                     display: 'flex',
                                     justifyContent: 'left',
                                     alignItems: 'center',
@@ -97,7 +97,7 @@ const ListFin = () => {
                                 }}
                             >
                                 <span style={{
-                                    marginTop: "-350px",
+                                    marginTop: "-250px",
                                     marginLeft:"38px",
                                     fontFamily: "Comfortaa",
                                     fontSize: '60px',
