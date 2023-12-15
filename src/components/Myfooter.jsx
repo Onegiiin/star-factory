@@ -60,30 +60,6 @@ const MyFooter = () => {
                     </div>
                     </div>
                 </div>
-                <Divider style={{ margin: '12px 0' }} />
-                <div className="row">
-                    <div className="col">
-                        <nav style={{ display: 'flex', justifyContent: 'center' }}>
-                            <ul style={{ display: 'flex', listStyle: 'none', padding: 0 }}>
-                                <li style={{ margin: '0 8px' }}>
-                                    <NavLink to="/home" color="inherit">
-                                        Home
-                                    </NavLink>
-                                </li>
-                                <li style={{ margin: '0 8px' }}>
-                                    <NavLink to="/list" color="inherit">
-                                        List
-                                    </NavLink>
-                                </li>
-                                <li style={{ margin: '0 8px' }}>
-                                    <NavLink to="/home#devs" color="inherit">
-                                        Devs
-                                    </NavLink>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
             </div>
         </footer>
     );
