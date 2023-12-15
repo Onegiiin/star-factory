@@ -35,22 +35,40 @@ const styles = {
         justifyContent: 'center',
         alignItems: 'center',
     },
+    content: {
+        justifyContent: 'left',
+        alignItems: 'center',
+        width: '1200px',
+        textAlign: 'left',
+        margin: '0px auto',
+        padding: "0px",
+        fontFamily: "Comfortaa",
+        color: 'rgba(255, 215, 0, 1)',
+        display:"flex",
+        fontSize: "20px",
+        backdropFilter: "blur(20px)",
+        backgroundColor: 'rgba(0, 0, 0, 0)',
+        textDecoration: 'none',
+        pointerEvents: 'none'
+    },
 };
 
-const ClickableImageWithText = ({ imageUrl, text, onClick }) => {
+const ClickableImageWithText = ({ imageUrl, text, shortInfo, born }) => {
     return (
-        <div style={styles.container}>
-        <Card onClick={onClick} style={styles.card}>
-            <div style={styles.cardContainer}>
-                <img src={imageUrl} alt="Image" style={styles.image} />
-                <div style={styles.textOverlay}>
-                    <Typography variant="body1" style={styles.text}>
-                        {text}
-                    </Typography>
-                </div>
+        <div>
+            <div style={styles.container}>
+                <Card style={styles.card}>
+                    <div style={styles.cardContainer}>
+                        <img src={imageUrl} alt="Image" style={styles.image} />
+                        <div style={styles.textOverlay}>
+                            <Typography variant="body1" style={styles.text}>
+                                {text}
+                            </Typography>
+                        </div>
+                    </div>
+                </Card>
             </div>
-        </Card>
-            </div>
+        </div>
     );
 };
 
