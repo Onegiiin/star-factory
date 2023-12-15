@@ -7,7 +7,7 @@ import image4 from "../images/prihodko/4.jpg"
 import image5 from "../images/prihodko/5.jpg"
 import image6 from "../images/prihodko/6.jpg"
 import image7 from "../images/prihodko/7.jpg"
-import main from "../images/prihodko/main.jpg"
+import main from "../images/Card5.jpg"
 import classes from "./Prihodko.module.css"
 import Navbar from "../components/Navbar";
 import Myfooter from "../components/Myfooter";
@@ -27,7 +27,7 @@ const info = {
     gender: "woman",
     mainImg: main,
     season: 7,
-    shortInfo: "Анастаси́я Константи́новна Прихо́дько — украинская певица, автор песен, общественный и политический деятель, заслуженная артистка Украины (2017).",
+    shortInfo: "Анастаси́я Константи́новна Прихо́дько — украинская певица, автор песен, общественный и политический деятель, заслуженная артистка Украины (2017). После победы на шоу, Приходько продолжила активную творческую деятельность, выпустив несколько популярных альбомов и хитов, которые стали любимыми среди поклонников. Её музыкальный стиль сочетает в себе эмоциональность и силу голоса, что делает её выступления запоминающимися и яркими. Звание заслуженной артистки Украины в 2017 году стало признанием не только её музыкального мастерства, но и вклада в культурную и общественную жизнь страны.",
     born: "21 апреля 1987",
     death: "настоящее время",
     mapCenter: [50.45, 30.52],

@@ -8,7 +8,7 @@ import image4 from "../images/gagarina/4.jpg"
 import image5 from "../images/gagarina/5.jpg"
 import image6 from "../images/gagarina/6.jpg"
 import image7 from "../images/gagarina/7.jpg"
-import main from "../images/gagarina/main.jpg"
+import main from "../images/Card2.jpg"
 import classes from "./Gagarina.module.css"
 import Navbar from "../components/Navbar";
 import Myfooter from "../components/Myfooter";
@@ -28,7 +28,7 @@ const info = {
     gender: "woman",
     mainImg: main,
     season: 2,
-    shortInfo: "Полина Сергеевна Гагарина — российская эстрадная певица, актриса кино, телевидения, озвучивания и дубляжа, композитор и фотомодель.",
+    shortInfo: "Полина Сергеевна Гагарина — российская эстрадная певица, актриса кино, телевидения, озвучивания и дубляжа, композитор и фотомодель. После победы на «Фабрике звезд» Полина Гагарина стала одной из ярких звёзд мировой музыкальной сцены. Её эмоциональные и мощные выступления завоевали сердца слушателей не только в России, но и за рубежом, открыв ей двери к международному признанию.",
     born: "27 марта 1987",
     death: "настоящее время",
     mapCenter: [55.75, 37.61],

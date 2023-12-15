@@ -7,7 +7,7 @@ import PersonalElements from "../components/PersonalElements";
  import image5 from "../images/korni/5.jpg"
  import image6 from "../images/korni/6.jpg"
  import image7 from "../images/korni/7.jpg"
-import main from "../images/korni/main.jpg"
+import main from "../images/Card1.jpg"
 import classes from "./Korni.module.css"
 import Navbar from "../components/Navbar";
 import Myfooter from "../components/Myfooter";
@@ -31,7 +31,7 @@ const info = {
         shortInfo: 'Российская поп-рок группа, победившая в первом сезоне талант-шоу «Фабрика звёзд». В состав «Корней» тогда вошли Александр Бердников, Алексей Кабанов, Павел Артемьев и Александр Асташёнок. В качестве приза участники бойз-бенда получили символический подарок — микрофон, который использовался в записи «фабричных» композиций, а также контракт с центром Матвиенко, гастрольный тур по России и поездку во Францию на конкурс «Евробест», объединивший призеров международных «Фабрик».',
         born: "2002",
         death: "настоящее время",
-        mapCenter: [55.75, 37.57],
+        mapCenter: [48, 38.5],
         mapMarkers: [[55.75, 37.57],[49.6, 17.25],[51.77, 55.1],[37.95,58,38]]
     };
 const bio = [

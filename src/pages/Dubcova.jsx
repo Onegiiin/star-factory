@@ -7,7 +7,7 @@ import image4 from "../images/dubcova/4.jpg"
 import image5 from "../images/dubcova/5.jpg"
 import image6 from "../images/dubcova/6.jpg"
 import image7 from "../images/dubcova/7.jpg"
-import main from "../images/dubcova/main.jpg"
+import main from "../images/Card3.jpg"
 import classes from "./Dubcova.module.css"
 import Navbar from "../components/Navbar";
 import Myfooter from "../components/Myfooter";
@@ -27,7 +27,7 @@ const info = {
     gender: "woman",
     mainImg: main,
     season: 4,
-    shortInfo: "Ирина Викторовна Дубцова — российская певица, поэтесса и композитор, бывшая солистка группы «Девочки» (1999—2001). Исполнительница собственных песен (как сольных, так и совместных), выпускница и победительница «Фабрики звёзд — 4», финалистка проекта «Фабрика звёзд. Возвращение».",
+    shortInfo: "Ирина Викторовна Дубцова — российская певица, поэтесса и композитор, бывшая солистка группы «Девочки» (1999—2001). Исполнительница собственных песен (как сольных, так и совместных), выпускница и победительница «Фабрики звёзд — 4», финалистка проекта «Фабрика звёзд. Возвращение». Ирина Дубцова прочно утвердилась как творческая личность, создавая хиты, которые завоевали популярность не только в России, но и за её пределами.",
     born: "14 февраля 1982",
     death: "настоящее время",
     mapCenter: [48.72, 44.5],
