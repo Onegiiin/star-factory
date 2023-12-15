@@ -25,10 +25,11 @@ const styles = {
         fontFamily: "journalism",
         color: 'rgba(255, 215, 0, 1)',
         margin: 0,
+        marginBottom:"20px",
         display: "flex",
         justifyContent: "center", /* Center the text vertically */
         alignItems: "flex-end", /* Align the text to the bottom */
-        fontSize: "150px",
+        fontSize: "112px",
         whiteSpace: "nowrap",
     },
     card: {
