@@ -71,8 +71,9 @@ const ListFin = () => {
             <h2>Победители</h2>
             <div className={classes.ots}>
                 <MyInput
+                    className ={classes.poisk}
                     value={searchQuery}
-                    placeholder="Поиск..."
+                    placeholder="Введите свой запрос..."
                     onChange={e => setSearchQuery(e.target.value)}
                 />
                 <div>
