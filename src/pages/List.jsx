@@ -37,6 +37,7 @@ const persUrls = [
 
 
 const ListFin = () => {
+    const [hasSearchResults, setHasSearchResults] = useState(true);
     const [searchQuery, setSearchQuery] = useState('');
     const [cards, setCards] = useState([]);
 
@@ -60,10 +61,15 @@ const ListFin = () => {
     }, []);
 
     const sortedSearchList = useMemo(() => {
-        return cards.filter(card =>
+        const filteredCards = cards.filter(card =>
             card.text.toLowerCase().includes(searchQuery.toLowerCase())
         );
+
+        setHasSearchResults(filteredCards.length > 0); // Устанавливаем состояние наличия результатов поиска
+
+        return filteredCards;
     }, [searchQuery, cards]);
+
 
     return (
         <div className={`${classes.bgImg}`}>
@@ -77,12 +83,33 @@ const ListFin = () => {
                     onChange={e => setSearchQuery(e.target.value)}
                 />
                 <div>
-                    <div className ={classes.scrollableContent}>
-                        <CardList cards={sortedSearchList} />
+                    <div className={classes.scrollableContent}>
+                        {hasSearchResults ? (
+                            <CardList cards={sortedSearchList} />
+                        ) : (
+                            <div
+                                style={{
+                                    marginTop: '377px',
+                                    display: 'flex',
+                                    justifyContent: 'left',
+                                    alignItems: 'center',
+                                    height: '50%'
+                                }}
+                            >
+                                <span style={{
+                                    marginTop: "-250px",
+                                    marginLeft:"38px",
+                                    fontFamily: "Comfortaa",
+                                    fontSize: '60px',
+                                    letterSpacing: '0px',
+                                    color: '#f4eaff',
+                                }}>Результаты не найдены</span>
+                            </div>
+                        )}
                     </div>
                 </div>
                 </div>
-            <MyFooter/>
+            <MyFooter className={classes.foot}/>
         </div>
     );
 };

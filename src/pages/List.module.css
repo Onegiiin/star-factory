@@ -7,10 +7,12 @@
     background-position: top;
     position: center;
     top:0;
+    min-height: 953px;
     background-color: #0c1117;
     z-index: -1;
 }
 .ots {
+    margin-top: 30px;
     margin-left: 20px;
 }
 
@@ -35,4 +37,8 @@
 
 .poisk::placeholder {
     color: #999;
+}
+
+.foot {
+
 }
