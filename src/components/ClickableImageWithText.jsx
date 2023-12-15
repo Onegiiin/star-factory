@@ -7,20 +7,25 @@ const styles = {
         maxWidth: 'fit-content',
     },
     image: {
-        width: '100%',
-        height: 'auto',
+        width:"1200px",
+        height:"628px",
     },
     textOverlay: {
         position: 'absolute',
         bottom: 0,
-        left: 0,
-        padding: '8px',
-        backgroundColor: 'rgba(0, 0, 0, 0.5)',
-        color: '#fff',
+        left: '50%',
+        transform: 'translateX(-50%)',
+        textAlign: 'center',
+        backgroundColor: 'rgba(0, 0, 0, 0.0)',
         width: '100%',
     },
     text: {
+        fontFamily: "journalism",
+        color: 'rgba(255, 215, 0, 1)',
         margin: 0,
+        display:"inline-block",
+        fontSize: "150px",
+        whiteSpace: "nowrap"
     },
     card: {
         display: 'inline-block',

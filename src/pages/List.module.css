@@ -11,14 +11,12 @@
     z-index: -1;
 }
 .ots {
-    padding-top: 130px;
+    left: 10%;
+    transform: translateX(10%);
+    padding-left: 0px;
 }
 
-.fixedContainer {
-    height: 800px;
-    overflow-y: auto;
-}
 
 .scrollableContent {
-    padding: 10px;
+    margin-left: -18px;
 }

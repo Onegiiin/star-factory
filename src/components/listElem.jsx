@@ -8,28 +8,37 @@ const styles = {
         maxWidth: 'fit-content',
     },
     image: {
-        width: '500px',
-        height: 'auto',
+        width:"900px",
+        height:"471px",
     },
     textOverlay: {
         position: 'absolute',
+        marginBottom:"-40px",
         bottom: 0,
-        left: 0,
-        padding: '8px',
-        backgroundColor: 'rgba(0, 0, 0, 0.5)',
-        color: '#fff',
+        left: '50%',
+        transform: 'translateX(-50%)',
+        textAlign: 'center',
+        backgroundColor: 'rgba(0, 0, 0, 0.0)',
         width: '100%',
     },
     text: {
+        fontFamily: "journalism",
+        color: 'rgba(255, 215, 0, 1)',
         margin: 0,
+        display: "flex",
+        justifyContent: "center", /* Center the text vertically */
+        alignItems: "flex-end", /* Align the text to the bottom */
+        fontSize: "150px",
+        whiteSpace: "nowrap",
     },
     card: {
         display: 'inline-block',
     },
     container: {
         display: 'flex',
-        justifyContent: 'center',
+        justifyContent: 'left',
         alignItems: 'center',
+        padding: "20px",
     },
 };
 
@@ -40,12 +49,12 @@ const ListElem = ({ param, onClick }) => {
             <div style={styles.cardContainer}>
                 <NavLink to={param.persUrl}>
                 <img src={param.imageUrl} alt="Артист" style={styles.image} />
-                </NavLink>
                 <div style={styles.textOverlay}>
                     <Typography variant="body1" style={styles.text}>
                         {param.text}
                     </Typography>
                 </div>
+                </NavLink>
             </div>
         </Card>
             </div>

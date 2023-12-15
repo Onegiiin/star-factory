@@ -68,16 +68,18 @@ const ListFin = () => {
     return (
         <div className={`${classes.bgImg}`}>
             <Navbar/>
+            <h2>Победители</h2>
+            <div className={classes.ots}>
                 <MyInput
                     value={searchQuery}
                     placeholder="Поиск..."
                     onChange={e => setSearchQuery(e.target.value)}
                 />
-                <h2>Победители</h2>
-                <div className={classes.fixedContainer}>
-                    <div className={classes.scrollableContent}>
+                <div>
+                    <div className ={classes.scrollableContent}>
                         <CardList cards={sortedSearchList} />
                     </div>
+                </div>
                 </div>
             <MyFooter/>
         </div>

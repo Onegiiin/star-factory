@@ -34,7 +34,7 @@ const WeeklyImage = () => {
         },
         {
             imageUrl: images.Card4,
-            text: 'Дмитрий Колдун',
+            text: 'Дмитрий Колдун ',
             persUrl: '/koldun'
         },
         {
@@ -43,7 +43,7 @@ const WeeklyImage = () => {
             persUrl: '/prihodko'
         },
         {
-            imageUrl: images.Card6,
+            imageUrl: images.Card6    ,
             text: 'Виктория Дайнеко',
             persUrl: '/daineko'
         },
