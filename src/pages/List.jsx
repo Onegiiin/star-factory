@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react';
+import React, { useMemo, useState, useRef, useEffect} from 'react';
 import CardList from '../components/Cardlist';
 import MyInput from '../components/UI/MyInput/Myinput';
 import classes from "./List.module.css";
@@ -37,8 +37,10 @@ const persUrls = [
 
 
 const ListFin = () => {
+    const [hasSearchResults, setHasSearchResults] = useState(true);
     const [searchQuery, setSearchQuery] = useState('');
     const [cards, setCards] = useState([]);
+    const emptyResultsRef = useRef(null);
 
     const importImages = async () => {
         const importedImages = await Promise.all(
@@ -60,10 +62,32 @@ const ListFin = () => {
     }, []);
 
     const sortedSearchList = useMemo(() => {
-        return cards.filter(card =>
+        const filteredCards = cards.filter(card =>
             card.text.toLowerCase().includes(searchQuery.toLowerCase())
         );
+
+        setHasSearchResults(filteredCards.length > 0); // Устанавливаем состояние наличия результатов поиска
+
+        return filteredCards;
     }, [searchQuery, cards]);
+
+    useEffect(() => {
+        const handleResize = () => {
+            if (!hasSearchResults && emptyResultsRef.current) {
+                const windowHeight = window.innerHeight;
+                const emptyResultsHeight = emptyResultsRef.current.clientHeight;
+                const marginTopValue = (windowHeight - emptyResultsHeight) / 2;
+                emptyResultsRef.current.style.marginTop = `${marginTopValue}px`;
+            }
+        };
+
+        handleResize(); // Вызываем сразу для начальной установки
+
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, [hasSearchResults]);
 
     return (
         <div className={`${classes.bgImg}`}>
@@ -71,17 +95,41 @@ const ListFin = () => {
             <h2>Победители</h2>
             <div className={classes.ots}>
                 <MyInput
+                    className ={classes.poisk}
                     value={searchQuery}
-                    placeholder="Поиск..."
+                    placeholder="Введите свой запрос..."
                     onChange={e => setSearchQuery(e.target.value)}
                 />
                 <div>
-                    <div className ={classes.scrollableContent}>
-                        <CardList cards={sortedSearchList} />
+                    <div className={classes.scrollableContent}>
+                        {hasSearchResults ? (
+                            <CardList cards={sortedSearchList} />
+                        ) : (
+                            <div>
+                                <span className={classes.emptyResults} style={{ position: 'absolute', top: '50%', transform: 'translateY(-50%)' }}>
+                                    Результаты не найдены
+                                </span>
+                            <div
+                                ref={emptyResultsRef}
+                                style={{
+                                    display: 'flex',
+                                    justifyContent: 'left',
+                                    alignItems: 'center',
+                                    height: '50%',
+                                    fontFamily: 'Comfortaa',
+                                    fontSize: '60px',
+                                    letterSpacing: '0px',
+                                    color: '#f4eaff',
+                                    position: 'relative'
+                                }}
+                            >
+                            </div>
+                            </div>
+                        )}
                     </div>
                 </div>
                 </div>
-            <MyFooter/>
+            <MyFooter className={classes.foot}/>
         </div>
     );
 };
