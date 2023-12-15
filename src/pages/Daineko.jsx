@@ -7,7 +7,7 @@ import image4 from "../images/daineko/4.jpg"
 import image5 from "../images/daineko/5.jpg"
 import image6 from "../images/daineko/6.jpg"
 import image7 from "../images/daineko/7.jpg"
-import main from "../images/daineko/main.jpg"
+import main from "../images/Card6.jpg"
 import classes from "./Daineko.module.css"
 import Navbar from "../components/Navbar";
 import Myfooter from "../components/Myfooter";
@@ -27,7 +27,7 @@ const info = {
     gender: "woman",
     mainImg: main,
     season: 5,
-    shortInfo: "Викто́рия Петро́вна Дайне́ко — российская певица и актриса. Победительница «Фабрики звёзд-5» (2004) и «Фабрики звёзд. Возвращение» (2011).",
+    shortInfo: "Викто́рия Петро́вна Дайне́ко — российская певица и актриса. Победительница «Фабрики звёзд-5» (2004) и «Фабрики звёзд. Возвращение» (2011). После победы на «Фабрике звёзд», Виктория Дайнеко активно развивает свою карьеру, сочетая успешную музыкальную деятельность с участием в киноиндустрии. Её творчество в различных жанрах и актёрские работы делают её ярким представителем развлекательной индустрии.",
     born: "12 мая 1987",
     death: "настоящее время",
     mapCenter: [44.9, 78.22],
