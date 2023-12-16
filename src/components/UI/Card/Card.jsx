@@ -3,33 +3,17 @@ import classes from './Card.module.css';
 import {Map, Placemark, YMaps} from "@pbe/react-yandex-maps";
 import {useTranslation} from "react-i18next";
 
-function getSizeOfMap(name) {
-    if (name === "Корни") {
+function getSizeOfMap(gender) {
+    if (gender === "-") {
         return 3;
     } else {
         return 11;
     }
 }
-function Group(name) {
-    if (name === "Корни") {
-        return " группы";
-    } else {
-        return "";
-    }    
-}
-
-function Place(name) {
-    if (name === "Корни") {
-        return "Места рождения основателей";
-    } else {
-        return "Место рождения";
-    }      
-}
 
 
 const Card = (props) => {
-    const { t, i18n } = useTranslation();
-
+    const {t, i18n} = useTranslation();
     return (
         <div className={classes.personContainer}>
             <h2 style={{textAlign: 'center'}}>{t(props.info.name)}</h2>
@@ -38,28 +22,38 @@ const Card = (props) => {
                 <div className={classes.descriptionContainer}>
                     <div className={classes.shortInfoContainer}>
                         {props.info.gender === "man"
-                            ? <p>Победитель {props.info.season}-ого сезона "Фабрики звезд"</p>
+                            ? <p>{t("card.man")} {props.info.season}{t("card.season")}</p>
                             : props.info.gender === "woman"
-                                ? <p>Победительница {props.info.season}-ого сезона "Фабрики звезд"</p>
-                                : <p>Победители {props.info.season}-ого сезона "Фабрики звезд"</p>
+                                ? <p>{t("card.woman")} {props.info.season}{t("card.season")}</p>
+                                : <p>{t("card.multi")} {props.info.season}{t("card.season")}</p>
                         }
-                        <p>{props.info.shortInfo}</p>
+                        <p>{t(props.info.shortInfo)}</p>
                     </div>
                     <div className={classes.yearAndMapContainer}>
-                        <p>Годы жизни{Group(props.info.name)}: </p>
-                        <p className={classes.secondParagraph}><time>{props.info.born}</time>{'⠀ —⠀'}<time>{props.info.death}</time></p>
-                        <p>{Place(props.info.name)}</p>
+                        {props.info.gender === "-"
+                            ? <p>{t("card.yearsGroup")}</p>
+                            : <p>{t("card.years")}</p>
+                        }
+                        <p className={classes.secondParagraph}>
+                            <time>{t(props.info.born)}</time>
+                            {'⠀ —⠀'}
+                            <time>{t(props.info.death)}</time>
+                        </p>
+                        {props.info.gender === "-"
+                            ? <p>{t("card.bornPlaces")}</p>
+                            : <p>{t("card.bornPlace")}</p>
+                        }
                         <YMaps>
                             <Map
                                 defaultState={{
                                     center: props.info.mapCenter,
-                                    zoom: getSizeOfMap(props.info.name),
+                                    zoom: getSizeOfMap(props.info.gender),
                                     controls: ["zoomControl", "fullscreenControl"],
                                 }}
                                 modules={["control.ZoomControl", "control.FullscreenControl"]}
                             >
                                 {props.info.mapMarkers.map((coordinates, index) => (
-                                    <Placemark key={index} defaultGeometry={coordinates} />
+                                    <Placemark key={index} defaultGeometry={coordinates}/>
                                 ))}
                             </Map>
                         </YMaps>

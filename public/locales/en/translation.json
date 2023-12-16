@@ -2,6 +2,16 @@
   "navbar": {
     "btnLng": "ENG"
   },
+  "card": {
+    "man": "Winner",
+    "woman": "Winner",
+    "multi": "Winners",
+    "season": "th season of \"Star Factory\"",
+    "years": "Years of life",
+    "yearsGroup": "The years of the band's life",
+    "bornPlaces": "Birthplaces of the founders",
+    "bornPlace": "Place of birth"
+  },
   "koldun": {
     "name": "Dmitry Koldun",
     "bio1": "Participation in the project \"People's Artist-2\" on the TV channel \"Russia\".",
