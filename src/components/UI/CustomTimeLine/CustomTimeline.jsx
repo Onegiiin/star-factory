@@ -15,12 +15,12 @@ export default function CustomTimeline(props) {
 
     return (
         <div className={classes.TimeLineContainer}>
-            <h2>Биография</h2>
+            <h2>{t("timeline.bio")}</h2>
             <Timeline position="alternate-reverse">
                 {props.bio.map((curr, ind) =>
                     <TimelineItem>
                         <TimelineOppositeContent>
-                            <time className={classes.time}>{curr.time}</time>
+                            <time className={classes.time}>{t(curr.time)}</time>
                         </TimelineOppositeContent>
                         <TimelineSeparator>
                             <TimelineDot
