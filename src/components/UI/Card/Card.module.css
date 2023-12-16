@@ -27,9 +27,8 @@
 
 /*Полное описание*/
 .descriptionContainer{
-    padding-top: 50px;
+    padding-top: 20px;
     padding-left: 40px;
-    display: grid;
     height: 400px;
     display: flex;
     text-align: justify;
@@ -37,24 +36,28 @@
 
 /*Инфо о рождении/смерти + карты (элемент .descriptionContainer)*/
 .yearAndMapContainer {
-    margin-top: -35px;
-    display: grid;
-    place-items: center;
+    margin-top: 0px;
     width:450px;
     height: 360px;
+    display: flex;
+    flex-direction: column; /* Расположение элементов в столбик */
+    align-items: center;
 }
 
 /*Краткое инфо о знаменитости (элемент .descriptionContainer)*/
 .shortInfoContainer{
     width:500px;
+    margin-top: 30px;
     margin-right: 20px;
 }
 
 .descriptionContainer p {
     color: #f4eaff;
-} 
+}
 
-.yearMapContainer p:first-of-type {
-    margin-bottom: -25px;
-} 
+.secondParagraph {
+    margin-bottom: 28px;
+    margin-top: -10px;
+}
+
 
