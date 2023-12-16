@@ -84,7 +84,7 @@ const MyCustomCarousel = () => {
                 <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span className="visually-hidden">Previous</span>
             </button>
-            <button className={`carousel-control-next ${classes.sldButton}`} type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <button className={`carousel-control-next ${classes.sldButton} ${classes.sldSecondButton}`} type="button" data-bs-target="#myCarousel" data-bs-slide="next">
                 <span className="carousel-control-next-icon" aria-hidden="true"></span>
                 <span className="visually-hidden">Next</span>
             </button>

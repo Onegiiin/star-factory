@@ -28,6 +28,15 @@ a {
 }
 
 .sldButton {
-    width: 60%;
+    width: 40%;
     color: #f4eaff;
+}
+
+.sldButton span {
+    position: absolute;
+    right: 30%;
+}
+
+.sldSecondButton span {
+    left: 30%;
 }

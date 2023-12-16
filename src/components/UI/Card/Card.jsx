@@ -9,6 +9,21 @@ function getSizeOfMap(name) {
         return 11;
     }
 }
+function Group(name) {
+    if (name === "Корни") {
+        return " группы";
+    } else {
+        return "";
+    }    
+}
+
+function Place(name) {
+    if (name === "Корни") {
+        return "Места рождения основателей";
+    } else {
+        return "Место рождения";
+    }      
+}
 
 const Card = (props) => {
     return (
@@ -27,8 +42,9 @@ const Card = (props) => {
                         <p>{props.info.shortInfo}</p>
                     </div>
                     <div className={classes.yearAndMapContainer}>
-                        <p>Годы жизни: </p>
-                        <p><time>{props.info.born}</time>{'⠀ —⠀'}<time>{props.info.death}</time></p>
+                        <p>Годы жизни{Group(props.info.name)}: </p>
+                        <p className={classes.secondParagraph}><time>{props.info.born}</time>{'⠀ —⠀'}<time>{props.info.death}</time></p>
+                        <p>{Place(props.info.name)}</p>
                         <YMaps>
                             <Map
                                 defaultState={{

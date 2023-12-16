@@ -1,5 +1,5 @@
 import React from 'react';
-import PersonalElements from "../components/UI/PersonalElements/PersonalElements";
+import PersonalElements from "../components/PersonalElements";
 import image1 from "../images/gagarina/1.jpg"
 import image2 from "../images/gagarina/2.jpg"
 import image3 from "../images/gagarina/3.jpg"
@@ -38,12 +38,6 @@ const bio = [
         time: "27 марта 1987",
         event: [
             "Рождение Полины Гагариной в Москве."
-        ]
-    },
-    {
-        time: "Детство в Греции",
-        event: [
-            "Провела детство в Греции, где ее мать, профессиональная танцовщица, работала в балете \"Алсос\" в Афинах."
         ]
     },
     {

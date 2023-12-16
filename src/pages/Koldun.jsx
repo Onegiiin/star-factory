@@ -1,5 +1,5 @@
 import React from 'react';
-import PersonalElements from "../components/UI/PersonalElements/PersonalElements";
+import PersonalElements from "../components/PersonalElements";
 import image1 from "../images/koldun/1.jpg"
 import image2 from "../images/koldun/2.jpg"
 import image3 from "../images/koldun/3.jpg"
@@ -43,7 +43,7 @@ const bio = [
         ]
     },
     {
-        time: "2004—2005",
+        time: "2005",
         event: [
             "Работа в Государственном концертном оркестре Республики Беларусь.",
             "Участие в фестивалях \"Молодечно-2005\" и \"Славянский базар\" в Витебске."
