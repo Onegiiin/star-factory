@@ -1,13 +1,18 @@
 import React, {useEffect, useState} from 'react';
-import {NavLink, useLocation} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 import logo from '../images/logo.png';
 import classes from "./Navbar.module.css";
+import { useTranslation } from 'react-i18next';
+
 
 const MyNavbar = () => {
-    const [lang, changeLang] = useState("РУС")
+    const { t, i18n } = useTranslation();
 
     const handleLangClick = () => {
-        changeLang(lang === "РУС" ? "ENG" : "РУС")
+        if (i18n.language === "ru")
+            i18n.changeLanguage("en");
+        else
+            i18n.changeLanguage("ru")
     }
 
     return (
@@ -50,7 +55,7 @@ const MyNavbar = () => {
                                     className="nav-link active"
                                     aria-current="page"
                                     to="/home#devs"
-                                    >
+                                >
                                     О разработчиках
                                 </NavLink>
                             </li>
@@ -58,7 +63,7 @@ const MyNavbar = () => {
                         <span className="navbar-text">
                         {' '}
                             <button type="button" className={`btn btn-lg ${classes.btn}`} onClick={handleLangClick}>
-                            {lang}
+                            {t("navbar.btnLng")}
                         </button>
                     </span>
                     </div>

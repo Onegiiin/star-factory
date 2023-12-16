@@ -1,6 +1,7 @@
 import React from 'react';
 import classes from './Card.module.css';
 import {Map, Placemark, YMaps} from "@pbe/react-yandex-maps";
+import {useTranslation} from "react-i18next";
 
 function getSizeOfMap(name) {
     if (name === "Корни") {
@@ -25,10 +26,13 @@ function Place(name) {
     }      
 }
 
+
 const Card = (props) => {
+    const { t, i18n } = useTranslation();
+
     return (
         <div className={classes.personContainer}>
-            <h2 style={{textAlign: 'center'}}>{props.info.name}</h2>
+            <h2 style={{textAlign: 'center'}}>{t(props.info.name)}</h2>
             <div className={classes.infoContainer}>
                 <img src={props.info.mainImg} alt={props.info.name}/>
                 <div className={classes.descriptionContainer}>

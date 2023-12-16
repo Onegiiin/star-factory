@@ -38,15 +38,14 @@
 
 .btn {
     width: 75px !important;
-    --bs-btn-color: gold;
-    --bs-btn-bg: #0c1117;
-    --bs-btn-border-color: #212529;
-    --bs-btn-hover-color: #f4eaff;
-    --bs-btn-hover-bg: #000000;
-    --bs-btn-hover-border-color: gold;
+    --bs-btn-color: #f4eaff;
+    --bs-btn-bg: rgba(12, 17, 23, 0.8);
+    --bs-btn-border-color: #f4eaff;
+    --bs-btn-hover-color: rgba(12, 17, 23, 0.8);
+    --bs-btn-hover-bg: #f4eaff;
+    --bs-btn-hover-border-color: rgba(12, 17, 23, 0.8);
     --bs-btn-focus-shadow-rgb: 66, 70, 73;
-    --bs-btn-active-color: #f4eaff;
-    --bs-btn-active-bg: #000000;
-    --bs-btn-active-border-color: gold;
-    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-active-color:  rgba(12, 17, 23, 0.8);
+    --bs-btn-active-bg: #f4eaff;
+    --bs-btn-active-border-color: rgba(12, 17, 23, 0.8);
 }

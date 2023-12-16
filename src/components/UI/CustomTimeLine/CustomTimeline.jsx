@@ -7,8 +7,12 @@ import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 import classes from './CustomTimeline.module.css'
+import {useTranslation} from "react-i18next";
+
 
 export default function CustomTimeline(props) {
+    const { t, i18n } = useTranslation();
+
     return (
         <div className={classes.TimeLineContainer}>
             <h2>Биография</h2>
@@ -28,7 +32,7 @@ export default function CustomTimeline(props) {
                         <TimelineContent>
                             {curr.event.map((part, partIndex) =>
                                 <React.Fragment key={partIndex}>
-                                    <p>{part}</p>
+                                    <p>{t(part)}</p>
                                 </React.Fragment>
                             )}
                         </TimelineContent>
