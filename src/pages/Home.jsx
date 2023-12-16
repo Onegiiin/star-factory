@@ -12,10 +12,10 @@ function Home() {
     return (
         <div className={`${classes.bgImg}`}>
             <Navbar/>
-            <WeeklyImage classname={classes.zagal}/>
+            <WeeklyImage/>
             <ScrollableText classname={classes.srcol}/>
             <MyCustomCarousel/>
-            <MyFooter/>
+            <MyFooter />
         </div>
     );
 }

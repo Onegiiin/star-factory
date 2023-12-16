@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Carousel } from 'bootstrap';
 import devs from '../../../images/back1deves.png';
@@ -6,18 +6,36 @@ import Avatar from 'react-avatar';
 import classes from './Gitprof.module.css';
 
 const MyCustomCarousel = () => {
+    const [carouselInitialized, setCarouselInitialized] = useState(false);
+
     useEffect(() => {
         const carousel = new Carousel(document.getElementById('myCarousel'), {
             interval: 2000,
         });
+
+        setCarouselInitialized(true);
 
         return () => {
             carousel.dispose();
         };
     }, []);
 
+    useEffect(() => {
+        const hash = window.location.hash;
+        if (carouselInitialized && hash === '#devs') {
+            const scrollToDevs = () => {
+                const devsElement = document.getElementById('devs');
+                if (devsElement) {
+                    devsElement.scrollIntoView({ behavior: 'smooth' });
+                }
+            };
+            setTimeout(scrollToDevs, 0);
+        }
+    }, [carouselInitialized]);
+
+
     return (
-        <div id = "devs" >
+        <div id="devs">
             <h2 className={classes.pktPos}>Разработчики</h2>
             <div id="myCarousel" className={`carousel slide carousel-fade ${classes.fotPos} data-bs-ride="true"`} >
                 <div className="carousel-inner ">

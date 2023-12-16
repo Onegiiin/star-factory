@@ -10,13 +10,21 @@ const styles = {
         margin: '0px auto',
         padding: "20px",
         fontFamily: "Comfortaa",
-        color: 'rgba(255, 215, 0, 1)',
+        color: '#f4eaff',
         display:"flex",
         fontSize: "20px",
         backdropFilter: "blur(3px)",
-        backgroundColor: 'rgba(12, 17, 23, 0.3)',
+        backgroundColor: 'rgba(12, 17, 23, 0.8)',
         textDecoration: 'none',
         pointerEvents: 'none'
+    },
+
+        borderedDivStyle: {
+            alignItems: 'center',
+            justifyContent: 'center',
+            margin: '0px auto',
+        width: '1204px',
+        border: '2px solid gold',
     },
 };
 
@@ -119,12 +127,14 @@ const WeeklyImage = () => {
     return (
         <div id="homepage">
             <h2>Артист дня</h2>
+            <div style={styles.borderedDivStyle}>
             <NavLink to={currentImageData.persUrl}>
             <ClickableImageWithText imageUrl={currentImageData.imageUrl} text={currentImageData.text} shortInfo={currentImageData.shortInfo} born={currentImageData.born}/>
             </NavLink>
             <p style={styles.content}>
-                {currentImageData.shortInfo} Годы жизни: {currentImageData.born}.
+                {currentImageData.shortInfo} Год рождения: {currentImageData.born}.
             </p>
+            </div>
         </div>
     );
 };
