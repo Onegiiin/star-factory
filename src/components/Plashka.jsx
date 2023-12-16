@@ -1,7 +1,9 @@
 import React from 'react';
 import ClickableImageWithText from './ClickableImageWithText';
 import {NavLink} from "react-router-dom";
+import classes from "./Plashka.module.css";
 import {useTranslation} from "react-i18next";
+
 const styles = {
     content: {
         justifyContent: 'left',
@@ -28,7 +30,6 @@ const styles = {
         border: '2px solid gold',
     },
 };
-
 
 
 const images = {
@@ -127,9 +128,9 @@ const WeeklyImage = () => {
     }
 
     return (
-        <div id="homepage">
+        <div classname={classes.kart} id="homepage">
             <h2>{t("plashka.title")}</h2>
-            <div style={styles.borderedDivStyle}>
+            <div className={classes.borderedDivStyle}>
             <NavLink to={currentImageData.persUrl}>
             <ClickableImageWithText imageUrl={currentImageData.imageUrl} text={currentImageData.text} shortInfo={currentImageData.shortInfo} born={currentImageData.born}/>
             </NavLink>
