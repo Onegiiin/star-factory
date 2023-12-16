@@ -21,6 +21,15 @@
     padding: 10px 50px;
 }
 
+.link{
+    border-radius: 10px;
+}
+
+.link:hover{
+    color: rgba(12, 17, 23, 0.8) !important;
+    background-color: #f4eaff;
+}
+
 .nvb {
     --bs-btn-color: #f4eaff;
     --bs-navbar-color: rgba(255, 255, 255, 0.55);

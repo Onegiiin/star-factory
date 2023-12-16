@@ -4,6 +4,8 @@ import { Carousel } from 'bootstrap';
 import devs from '../../../images/back1deves.png';
 import Avatar from 'react-avatar';
 import classes from './Gitprof.module.css';
+import {useTranslation} from "react-i18next";
+
 
 const MyCustomCarousel = () => {
     const [carouselInitialized, setCarouselInitialized] = useState(false);
@@ -33,10 +35,11 @@ const MyCustomCarousel = () => {
         }
     }, [carouselInitialized]);
 
+    const { t, i18n } = useTranslation();
 
     return (
         <div id="devs">
-            <h2 className={classes.pktPos}>Разработчики</h2>
+            <h2 className={classes.pktPos}>{t("gp.title")}</h2>
             <div id="myCarousel" className={`carousel slide carousel-fade ${classes.fotPos} data-bs-ride="true"`} >
                 <div className="carousel-inner ">
                     <div className="carousel-item active " data-bs-interval="10000">

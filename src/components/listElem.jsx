@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Typography } from '@mui/material';
+import {Card, Typography} from '@mui/material';
 import {NavLink} from "react-router-dom";
 
 const styles = {
@@ -8,12 +8,12 @@ const styles = {
         maxWidth: 'fit-content',
     },
     image: {
-        width:"900px",
-        height:"471px",
+        width: "900px",
+        height: "471px",
     },
     textOverlay: {
         position: 'absolute',
-        marginBottom:"-40px",
+        marginBottom: "-40px",
         bottom: 0,
         left: '50%',
         transform: 'translateX(-50%)',
@@ -25,7 +25,7 @@ const styles = {
         fontFamily: "journalism",
         color: 'rgba(255, 215, 0, 1)',
         margin: 0,
-        marginBottom:"20px",
+        marginBottom: "20px",
         display: "flex",
         justifyContent: "center", /* Center the text vertically */
         alignItems: "flex-end", /* Align the text to the bottom */
@@ -43,22 +43,22 @@ const styles = {
     },
 };
 
-const ListElem = ({ param, onClick }) => {
+const ListElem = ({param, onClick}) => {
     return (
-            <div style={styles.container}>
-        <Card sx={{ width: 'auto' }} style={styles.card} onClick={onClick}>
-            <div style={styles.cardContainer}>
-                <NavLink to={param.persUrl}>
-                <img src={param.imageUrl} alt="Артист" style={styles.image} />
-                <div style={styles.textOverlay}>
-                    <Typography variant="body1" style={styles.text}>
-                        {param.text}
-                    </Typography>
+        <div style={styles.container}>
+            <Card sx={{width: 'auto'}} style={styles.card} onClick={onClick}>
+                <div style={styles.cardContainer}>
+                    <NavLink to={param.persUrl}>
+                        <img src={param.imageUrl} alt="Артист" style={styles.image}/>
+                        <div style={styles.textOverlay}>
+                            <Typography variant="body1" style={styles.text}>
+                                {param.text}
+                            </Typography>
+                        </div>
+                    </NavLink>
                 </div>
-                </NavLink>
-            </div>
-        </Card>
-            </div>
+            </Card>
+        </div>
     );
 };
 

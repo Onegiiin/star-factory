@@ -27,9 +27,9 @@ const info = {
     gender: "woman",
     mainImg: main,
     season: 5,
-    shortInfo: "Викто́рия Петро́вна Дайне́ко — российская певица и актриса. Победительница «Фабрики звёзд-5» (2004) и «Фабрики звёзд. Возвращение» (2011). После победы на «Фабрике звёзд», Виктория Дайнеко активно развивает свою карьеру, сочетая успешную музыкальную деятельность с участием в киноиндустрии. Её творчество в различных жанрах и актёрские работы делают её ярким представителем развлекательной индустрии.",
-    born: "12 мая 1987",
-    death: "настоящее время",
+    shortInfo: "daineko.short",
+    born: "daineko.born",
+    death: "nowadays",
     mapCenter: [44.9, 78.22],
     mapMarkers: [[44.9, 78.22]]
 };
@@ -109,36 +109,37 @@ const bio = [
         ]
     }
 ];
+
 const photos = [
     {
         img: image1,
-        title: 'Фабрика звезд',
+        title: "daineko.img1",
         featured: true,
     },
     {
         img: image2,
-        title: 'Три аккорда',
+        title: "daineko.img2",
     },
     {
         img: image3,
-        title: 'Концерт "Русское Рождество"',
+        title: "daineko.img3",
     },
     {
         img: image4,
-        title: 'Москва',
+        title: "daineko.img4",
         featured: true
     },
     {
         img: image6,
-        title: 'Тольятти',
+        title: "daineko.img5",
     },
     {
         img: image7,
-        title: 'Санкт-Петербург',
+        title: "daineko.img6",
     },
     {
         img: image5,
-        title: 'Воронеж',
+        title: "daineko.img7",
         featured: true
     },
 

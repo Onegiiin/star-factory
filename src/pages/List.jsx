@@ -4,6 +4,7 @@ import MyInput from '../components/UI/MyInput/Myinput';
 import classes from "./List.module.css";
 import Navbar from "../components/Navbar";
 import MyFooter from "../components/Myfooter";
+import {useTranslation} from "react-i18next";
 
 const imagePaths = [
     'Card1.jpg',
@@ -89,15 +90,17 @@ const ListFin = () => {
         };
     }, [hasSearchResults]);
 
+    const { t, i18n } = useTranslation();
+
     return (
         <div className={`${classes.bgImg}`}>
             <Navbar/>
-            <h2>Победители</h2>
+            <h2>{t("list.title")}</h2>
             <div className={classes.ots}>
                 <MyInput
                     className ={classes.poisk}
                     value={searchQuery}
-                    placeholder="Введите свой запрос..."
+                    placeholder={t("list.request")}
                     onChange={e => setSearchQuery(e.target.value)}
                 />
                 <div>

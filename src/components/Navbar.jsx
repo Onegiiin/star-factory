@@ -2,11 +2,11 @@ import React, {useEffect, useState} from 'react';
 import {NavLink} from 'react-router-dom';
 import logo from '../images/logo.png';
 import classes from "./Navbar.module.css";
-import { useTranslation } from 'react-i18next';
+import {useTranslation} from 'react-i18next';
 
 
 const MyNavbar = () => {
-    const { t, i18n } = useTranslation();
+    const {t, i18n} = useTranslation();
 
     const handleLangClick = () => {
         if (i18n.language === "ru")
@@ -14,6 +14,7 @@ const MyNavbar = () => {
         else
             i18n.changeLanguage("ru")
     }
+
 
     return (
         <div className={`${classes.nvbr}`}>
@@ -36,27 +37,29 @@ const MyNavbar = () => {
                     <div className={`collapse navbar-collapse ${classes.nvb}`} id="navbarSupportedContent">
                         <ul className={`navbar-nav me-auto mb-2 mb-lg-0 ${classes.txt}`}>
                             <li className={`nav-item ${classes.element}`}>
-                                <NavLink className="nav-link active" aria-current="page" to="/home">
-                                    Главная
+                                <NavLink className={`nav-link active ${classes.link}`}
+                                         aria-current="page" to="/home"
+                                >
+                                    {t("navbar.home")}
                                 </NavLink>
                             </li>
                             <li className={`nav-item ${classes.element}`}>
-                                <NavLink className="nav-link active" to="/list">
-                                    Поиск артистов
+                                <NavLink className={`nav-link active ${classes.link}`} to="/list">
+                                    {t("navbar.artists")}
                                 </NavLink>
                             </li>
                             <li className={`nav-item ${classes.element}`}>
-                                <NavLink className="nav-link active" to="/home#aboutPortal">
-                                    О портале
+                                <NavLink className={`nav-link active ${classes.link}`} to="/home#aboutPortal">
+                                    {t("navbar.about")}
                                 </NavLink>
                             </li>
                             <li className="nav-item">
                                 <NavLink
-                                    className="nav-link active"
+                                    className={`nav-link active ${classes.link}`}
                                     aria-current="page"
                                     to="/home#devs"
                                 >
-                                    О разработчиках
+                                    {t("navbar.devs")}
                                 </NavLink>
                             </li>
                         </ul>

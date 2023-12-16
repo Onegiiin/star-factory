@@ -6,6 +6,7 @@ import IconButton from '@mui/material/IconButton';
 import PlaceOutlinedIcon from '@mui/icons-material/PlaceOutlined';
 import {useState} from "react";
 import classes from './ImageList.module.css'
+import {useTranslation} from "react-i18next";
 
 function srcset(image, width, height, rows = 1, cols = 1) {
     return {
@@ -25,10 +26,11 @@ export default function CustomImageList(props) {
         setSelectedImg(event.target.src);
         setOpen(true);
     }
+    const {t, i18n} = useTranslation();
 
     return (
         <div>
-            <h2>Фотогалерея</h2>
+            <h2>{t("photogallery")}</h2>
             {open && (
                 <div>
                     <div
@@ -56,7 +58,7 @@ export default function CustomImageList(props) {
                         }}
                         onClick={() => setOpen(false)}
                         src={selectedImg}
-                        alt="Увеличенное изображение"
+                        alt={t("enlargedImg")}
                     />
                 </div>
             )}
@@ -92,7 +94,7 @@ export default function CustomImageList(props) {
                                         'linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, ' +
                                         'rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 100%)',
                                 }}
-                                title={item.title}
+                                title={t(item.title)}
                                 position="top"
                                 actionIcon={
                                     <IconButton

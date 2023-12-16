@@ -1,6 +1,7 @@
 import React from 'react';
 import ClickableImageWithText from './ClickableImageWithText';
 import {NavLink} from "react-router-dom";
+import {useTranslation} from "react-i18next";
 const styles = {
     content: {
         justifyContent: 'left',
@@ -29,6 +30,7 @@ const styles = {
 };
 
 
+
 const images = {
     Card1: import('../images/Card1.jpg'),
     Card2: import('../images/Card2.jpg'),
@@ -41,7 +43,7 @@ const images = {
 
 const WeeklyImage = () => {
     const currentDay = new Date().getDay();
-
+    const { t, i18n } = useTranslation();
     const imagesData = [
         {
             imageUrl: images.Card1,
@@ -126,7 +128,7 @@ const WeeklyImage = () => {
 
     return (
         <div id="homepage">
-            <h2>Артист дня</h2>
+            <h2>{t("plashka.title")}</h2>
             <div style={styles.borderedDivStyle}>
             <NavLink to={currentImageData.persUrl}>
             <ClickableImageWithText imageUrl={currentImageData.imageUrl} text={currentImageData.text} shortInfo={currentImageData.shortInfo} born={currentImageData.born}/>

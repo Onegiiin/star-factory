@@ -1,6 +1,10 @@
 {
   "navbar": {
-    "btnLng": "ENG"
+    "btnLng": "ENG",
+    "home": "Home",
+    "artists": "Artists search",
+    "about": "About portal",
+    "devs": "Developers"
   },
   "card": {
     "man": "Winner",
@@ -15,6 +19,32 @@
   "timeline": {
     "bio": "Biography"
   },
+  "st": {
+    "title": "About the web portal",
+    "p1": "This web portal is a central platform dedicated to outstanding artists who have become winners of the Factory of Stars. It contains information about talented musicians who delighted the audience with their performances and achievements in various genres of music.",
+    "p2": "Visitors of the portal will be able to immerse themselves in the stories of these artists, learn about their creative path, years of life, outstanding achievements and unique moments of their career. Each artist is presented on a separate page with photos, videos, biography and detailed information about his work and contribution to the music industry.",
+    "p3": "The purpose of the portal is to provide users with a convenient and informative resource for getting to know the winners of the Factory of Stars, allowing them to get acquainted with their musical achievements, creative history and influence on the music scene.",
+    "p4": "Star Factory is a Russian musical reality show to support young performers, aired on Channel One from October 13, 2002 to December 9, 2007 and from March 12, 2011 to July 6, 2012 and was popular with viewers. The fifth season of the project was known as \"Alla Pugacheva's Star Factory\", as it was the singer who became the artistic director of this season of the project. The last season in the usual format was released under the leadership of Konstantin and Valery Meladze. \"Star Factory\" is the first program of Channel One that aired with stereo sound.",
+    "p5": "On March 12, 2011, a project called The Star Factory was launched. The return.\" Despite the name, it was not a continuation of the usual project. This time, it was not unknown contenders who competed with each other, but established bright performers — graduates of the \"Factory of Stars\" from different years, each of whom once began his career in the Star House",
+    "p6": "In 2012, a continuation of the project called \"Star Factory: Russia-Ukraine\" was released, in which the best graduates of the Russian and Ukrainian versions of the Factory competed.",
+    "p7": "In March 2015, as part of the Channel One Collection project, a selection of the best moments of the fifth Factory was shown for the 15th anniversary of the project.",
+    "p8": "In mid-May 2017, it became known that the new season of the \"Factory of Stars\" will be released on the Muz-TV channel. The premiere took place on September 2, 2017. The reporting concerts aired on Muz-TV on Saturdays at 18:00, and the project diaries — from Monday to Friday at 14:30, 19:20 and 22:30. Repeats of the reporting concerts were broadcast on Saturdays at 11:00 and Sundays at 22:00 on the Yu TV channel. The presenter of the reporting concerts is Ksenia Sobchak, the diaries are Artem Shalimov and Georgy Ivashchenko, who participated in the seventh season of the project.",
+    "p9": "In July 2020, three issues entitled \"Star Factory\" were released on Channel One for the 20th anniversary of the project. The best\", where Yana Churikova talked about the history of the project and showed the best performances.",
+    "p10": "On April 22, 2023, in honor of the 20th anniversary of the project, a gala concert was held with the participation of popular participants of all seasons. On June 30, 2023, the concert was shown on Channel One at 21:45 after the Vremya program. After the concert, a documentary dedicated to the 20th anniversary of the project was shown."
+  },
+  "gp": {
+    "title": "Developers"
+  },
+  "plashka": {
+    "title": "Artist of the Day"
+  },
+  "list": {
+    "title": "Winners",
+    "request": "Enter your request..."
+  },
+  "nowadays" : "nowadays",
+  "photogallery": "Photogallery",
+  "enlargedImg": "Enlarged image",
   "koldun": {
     "name": "Dmitry Koldun",
     "bio1": "Participation in the project \"People's Artist-2\" on the TV channel \"Russia\".",
@@ -43,6 +73,8 @@
   },
   "daineko": {
     "name": "Victoria Daineko",
+    "short": "Victoria Petrovna Dayneko is a Russian singer and actress. The winner of \"Star Factory-5\" (2004) and \"Star Factory. The Return\" (2011). After winning the Star Factory, Victoria Daineko is actively developing her career, combining successful musical activities with participation in the film industry. Her work in various genres and acting work make her a prominent representative of the entertainment industry.",
+    "born": "May 12, 1987",
     "bio1": "Winner of \"Star Factory 5\", received an apartment in Moscow.",
     "bio2": "Debut music video for the song \"Leyla\".",
     "bio3": "Participation in the project \"Ice Age\" with Alexey Yagudin.",
@@ -56,7 +88,14 @@
     "bio11": "Voiced a character in the animated film \"Trolls\".",
     "bio12": "Release of the album \"Magnetic\".",
     "bio13": "Head of the electoral list of the party \"Green Alternative\".",
-    "bio14": "Participation in the seventh season of the show \"Three Chords\" on Channel One."
+    "bio14": "Participation in the seventh season of the show \"Three Chords\" on Channel One.",
+    "img1": "Star Factory",
+    "img2": "Three chords",
+    "img3": "The concert \"Russian Christmas\"",
+    "img4": "Moscow",
+    "img5": "Tolyatti",
+    "img6": "Saint-Petersburg",
+    "img7": "Voronezh"
   },
   "dubcova": {
     "name": "Irina Dubcova",
@@ -203,5 +242,5 @@
     "bio11": "Joining the party \"Batkivshchyna\".",
     "bio12": "Leaving the party and returning to music.",
     "bio13": "Release of the song \"Podruga\" and the music video \"Stepom\" (June 22)."
-  }  
+  }
 }
