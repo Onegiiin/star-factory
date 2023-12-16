@@ -1,5 +1,5 @@
 import React from 'react';
-import PersonalElements from "../components/PersonalElements";
+import PersonalElements from "../components/UI/PersonalElements/PersonalElements";
 import image1 from "../images/hasanova/1.jpg"
 import image2 from "../images/hasanova/2.jpg"
 import image3 from "../images/hasanova/3.jpg"
@@ -90,6 +90,7 @@ const photos = [
     },
     {
         img: image3,
+        featured: true,
     },
     {
         img: image4,

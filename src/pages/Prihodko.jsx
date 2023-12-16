@@ -1,5 +1,5 @@
 import React from 'react';
-import PersonalElements from "../components/PersonalElements";
+import PersonalElements from "../components/UI/PersonalElements/PersonalElements";
 import image1 from "../images/prihodko/1.jpg"
 import image2 from "../images/prihodko/2.jpg"
 import image3 from "../images/prihodko/3.jpg"
@@ -102,22 +102,23 @@ const photos = [
         img: image2,
     },
     {
+        img: image6,
+        featured: true,
+    },
+    {
         img: image3,
     },
     {
         img: image4,
-        title: 'Евровиденье-2011'
-    },
-    {
-        img: image5,
-    },
-    {
-        img: image6,
+        title: 'Евровидение 2011'
     },
     {
         img: image7,
         title: 'Киев'
-    }
+    },
+    {
+        img: image5,
+    },
 ];
 const video = "https://www.youtube.com/embed/iEPE-vbWqWw?si=oBm9j7uIPGNitvch";
 

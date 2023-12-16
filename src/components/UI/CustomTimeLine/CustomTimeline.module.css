@@ -1,0 +1,14 @@
+p {
+    display: block;
+}
+
+.time{
+    font-family: Comfortaa;
+    font-size: 20px;
+    color: gold;
+}
+
+.TimeLineContainer {
+     margin: 225px 0;
+     backdrop-filter: blur(10px);
+ }

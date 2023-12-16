@@ -1,5 +1,5 @@
 import React from 'react';
-import PersonalElements from "../components/PersonalElements";
+import PersonalElements from "../components/UI/PersonalElements/PersonalElements";
 import image1 from "../images/daineko/1.jpg"
 import image2 from "../images/daineko/2.jpg"
 import image3 from "../images/daineko/3.jpg"
@@ -126,10 +126,7 @@ const photos = [
     {
         img: image4,
         title: 'Москва',
-    },
-    {
-        img: image5,
-        title: 'Воронеж',
+        featured: true
     },
     {
         img: image6,
@@ -139,10 +136,14 @@ const photos = [
         img: image7,
         title: 'Санкт-Петербург',
     },
+    {
+        img: image5,
+        title: 'Воронеж',
+        featured: true
+    },
 
 ];
 const video = "https://www.youtube.com/embed/BzjpBVVKKCE?si=GokmUeqQfqlJq8u9";
-
 
 
 export default Daineko;

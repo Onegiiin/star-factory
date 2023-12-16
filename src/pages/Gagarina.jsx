@@ -1,6 +1,5 @@
-
 import React from 'react';
-import PersonalElements from "../components/PersonalElements";
+import PersonalElements from "../components/UI/PersonalElements/PersonalElements";
 import image1 from "../images/gagarina/1.jpg"
 import image2 from "../images/gagarina/2.jpg"
 import image3 from "../images/gagarina/3.jpg"
@@ -209,7 +208,6 @@ const photos = [
     {
         img: image1,
         title: 'Победа на RU.TV',
-        featured: true,
     },
     {
         img: image2,
@@ -226,6 +224,7 @@ const photos = [
     {
         img: image5,
         title: 'Минск',
+        featured: true
     },
     {
         img: image6,
@@ -238,9 +237,6 @@ const photos = [
 
 ];
 const video = "https://www.youtube.com/embed/V94vZTNkLng?si=xm7tSjODQGoFScXK";
-
-
-
 
 
 export default Gagarina;

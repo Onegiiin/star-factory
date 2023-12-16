@@ -1,5 +1,5 @@
 import React from 'react';
-import PersonalElements from "../components/PersonalElements";
+import PersonalElements from "../components/UI/PersonalElements/PersonalElements";
 import image1 from "../images/korni/1.jpg"
 import image2 from "../images/korni/2.jpg"
 import image3 from "../images/korni/3.jpg"
@@ -7,6 +7,7 @@ import image4 from "../images/korni/4.jpg"
 import image5 from "../images/korni/5.jpg"
 import image6 from "../images/korni/6.jpg"
 import image7 from "../images/korni/7.jpg"
+import image8 from "../images/korni/8.jpg"
 import main from "../images/Card1.jpg"
 import classes from "./Korni.module.css"
 import Navbar from "../components/Navbar";
@@ -24,16 +25,16 @@ const Korni = () => {
 };
 
 const info = {
-        name: "Корни",
-        gender: "man",
-        mainImg: main,
-        season: 1,
-        shortInfo: 'Российская поп-рок группа, победившая в первом сезоне талант-шоу «Фабрика звёзд». В состав «Корней» тогда вошли Александр Бердников, Алексей Кабанов, Павел Артемьев и Александр Асташёнок. В качестве приза участники бойз-бенда получили символический подарок — микрофон, который использовался в записи «фабричных» композиций, а также контракт с центром Матвиенко, гастрольный тур по России и поездку во Францию на конкурс «Евробест», объединивший призеров международных «Фабрик».',
-        born: "2002",
-        death: "настоящее время",
-        mapCenter: [48, 38.5],
-        mapMarkers: [[55.75, 37.57],[49.6, 17.25],[51.77, 55.1],[37.95,58,38]]
-    };
+    name: "Корни",
+    gender: "-",
+    mainImg: main,
+    season: 1,
+    shortInfo: 'Российская поп-рок группа, победившая в первом сезоне талант-шоу «Фабрика звёзд». В состав «Корней» тогда вошли Александр Бердников, Алексей Кабанов, Павел Артемьев и Александр Асташёнок. В качестве приза участники бойз-бенда получили символический подарок — микрофон, который использовался в записи «фабричных» композиций, а также контракт с центром Матвиенко, гастрольный тур по России и поездку во Францию на конкурс «Евробест», объединивший призеров международных «Фабрик».',
+    born: "2002",
+    death: "настоящее время",
+    mapCenter: [48, 38.5],
+    mapMarkers: [[55.75, 37.57], [49.6, 17.25], [51.77, 55.1], [37.95, 58, 38]]
+};
 const bio = [
     {
         time: "2002",
@@ -115,7 +116,8 @@ const bio = [
 const photos = [
     {
         img: image1,
-        title: 'Минск'
+        title: 'Минск',
+        featured: true
     },
     {
         img: image2
@@ -129,19 +131,23 @@ const photos = [
         title: 'Брест'
     },
     {
+        img: image8,
+        title: 'Псков'
+    },
+    {
+        img: image6,
+        featured: true
+    },
+    {
         img: image5,
         title: 'Москва'
     },
     {
-        img: image6
-    },
-    {
         img: image7,
         title: 'Брест'
-    }
+    },
 ];
 const video = "https://www.youtube.com/embed/GSjk94YPpaM?si=x1SEHiGXYFlghXBs";
-
 
 
 export default Korni;

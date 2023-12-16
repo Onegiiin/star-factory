@@ -5,6 +5,7 @@ import ImageListItemBar from '@mui/material/ImageListItemBar';
 import IconButton from '@mui/material/IconButton';
 import PlaceOutlinedIcon from '@mui/icons-material/PlaceOutlined';
 import {useState} from "react";
+import classes from './ImageList.module.css'
 
 function srcset(image, width, height, rows = 1, cols = 1) {
     return {
@@ -27,6 +28,7 @@ export default function CustomImageList(props) {
 
     return (
         <div>
+            <h2>Фотогалерея</h2>
             {open && (
                 <div>
                     <div
@@ -58,12 +60,16 @@ export default function CustomImageList(props) {
                     />
                 </div>
             )}
-            <ImageList style={{marginLeft: "auto", marginRight: "auto"}}
+            <ImageList className={classes.ImageListBackground} style={{marginLeft: "auto", marginRight: "auto"}}
                        sx={{
                            width: 1000,
                            height: 800,
                            // Promote the list into its own layer in Chrome. This costs memory, but helps keeping high FPS.
                            transform: 'translateZ(0)',
+                           '&::-webkit-scrollbar': {width: "5px"},
+                           '&::-webkit-scrollbar-track': {backgroundColor: "transparent"},
+                           '&::-webkit-scrollbar-thumb': {backgroundColor: "#888888", borderRadius: "5px"},
+
                        }}
                        rowHeight={400}
                        gap={2}
