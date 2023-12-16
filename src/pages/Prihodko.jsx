@@ -1,5 +1,5 @@
 import React from 'react';
-import PersonalElements from "../components/UI/PersonalElements/PersonalElements";
+import PersonalElements from "../components/PersonalElements";
 import image1 from "../images/prihodko/1.jpg"
 import image2 from "../images/prihodko/2.jpg"
 import image3 from "../images/prihodko/3.jpg"

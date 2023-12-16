@@ -19,7 +19,6 @@ export default function CustomTimeline(props) {
                         </TimelineOppositeContent>
                         <TimelineSeparator>
                             <TimelineDot
-
                                 variant="outlined"
                                 sx = {{border: '2px solid gold'}}
                             />
@@ -35,7 +34,10 @@ export default function CustomTimeline(props) {
                     </TimelineItem>
                 )}
             </Timeline>
+            <iframe className={classes.yt} src={props.video}
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen></iframe>
         </div>
     )
-        ;
 }
