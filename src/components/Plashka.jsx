@@ -1,33 +1,7 @@
 import React from 'react';
 import ClickableImageWithText from './ClickableImageWithText';
 import {NavLink} from "react-router-dom";
-const styles = {
-    content: {
-        justifyContent: 'left',
-        alignItems: 'center',
-        width: '1200px',
-        textAlign: 'left',
-        margin: '0px auto',
-        padding: "20px",
-        fontFamily: "Comfortaa",
-        color: '#f4eaff',
-        display:"flex",
-        fontSize: "20px",
-        backdropFilter: "blur(3px)",
-        backgroundColor: 'rgba(12, 17, 23, 0.8)',
-        textDecoration: 'none',
-        pointerEvents: 'none'
-    },
-
-        borderedDivStyle: {
-            alignItems: 'center',
-            justifyContent: 'center',
-            margin: '0px auto',
-        width: '1204px',
-        border: '2px solid gold',
-    },
-};
-
+import classes from "./Plashka.module.css";
 
 const images = {
     Card1: import('../images/Card1.jpg'),
@@ -125,13 +99,13 @@ const WeeklyImage = () => {
     }
 
     return (
-        <div id="homepage">
+        <div classname={classes.kart} id="homepage">
             <h2>Артист дня</h2>
-            <div style={styles.borderedDivStyle}>
+            <div className={classes.borderedDivStyle}>
             <NavLink to={currentImageData.persUrl}>
             <ClickableImageWithText imageUrl={currentImageData.imageUrl} text={currentImageData.text} shortInfo={currentImageData.shortInfo} born={currentImageData.born}/>
             </NavLink>
-            <p style={styles.content}>
+            <p className={classes.content}>
                 {currentImageData.shortInfo} Год рождения: {currentImageData.born}.
             </p>
             </div>
