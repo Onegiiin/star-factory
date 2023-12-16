@@ -5,6 +5,7 @@ import ImageListItemBar from '@mui/material/ImageListItemBar';
 import IconButton from '@mui/material/IconButton';
 import PlaceOutlinedIcon from '@mui/icons-material/PlaceOutlined';
 import {useState} from "react";
+import classes from './ImageList.module.css'
 
 function srcset(image, width, height, rows = 1, cols = 1) {
     return {
@@ -27,6 +28,7 @@ export default function CustomImageList(props) {
 
     return (
         <div>
+            <h2>Фотогалерея</h2>
             {open && (
                 <div>
                     <div
@@ -58,7 +60,7 @@ export default function CustomImageList(props) {
                     />
                 </div>
             )}
-            <ImageList style={{marginLeft: "auto", marginRight: "auto"}}
+            <ImageList className={classes.ImageListBackground} style={{marginLeft: "auto", marginRight: "auto"}}
                        sx={{
                            width: 1000,
                            height: 800,

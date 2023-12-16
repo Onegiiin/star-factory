@@ -1,5 +1,5 @@
 import React from 'react';
-import PersonalElements from "../components/PersonalElements";
+import PersonalElements from "../components/UI/PersonalElements/PersonalElements";
 import image1 from "../images/dubcova/1.jpg"
 import image2 from "../images/dubcova/2.jpg"
 import image3 from "../images/dubcova/3.jpg"
@@ -7,6 +7,7 @@ import image4 from "../images/dubcova/4.jpg"
 import image5 from "../images/dubcova/5.jpg"
 import image6 from "../images/dubcova/6.jpg"
 import image7 from "../images/dubcova/7.jpg"
+import image8 from "../images/dubcova/8.jpg"
 import main from "../images/Card3.jpg"
 import classes from "./Dubcova.module.css"
 import Navbar from "../components/Navbar";
@@ -134,12 +135,12 @@ const bio = [
             "Участие в четвёртом сезоне \"Х-Фактор\" в качестве судьи."
         ]
     },
-    { 
+    {
         time: "Начало 2014 года",
         event: [
             "Участие в шоу \"Точь-в-точь\" на Первом канале, где стала победительницей проекта, разделив победу с Никитой Пресняковым."
         ]
-        
+
     },
     {
         time: "Март 2014 года",
@@ -147,21 +148,21 @@ const bio = [
             "Премьера клипа на дуэтную композицию с Любовью Успенской \"Я тоже его люблю\"."
         ]
     },
-    {    
+    {
         time: "Март 2014 года:",
         event: [
             "Победа в номинации \"Любимый судья шоу\" на премии \"Телезвезда\" (Украина)."
         ]
     },
-    {    
+    {
         time: "Июль 2014 года",
         event: [
             "Презентация совместного сингла с DJ Леонидом Руденко \"Вспоминать\" на \"Новой волне 2014\"."
         ]
     },
-    {   
+    {
         time: "Сентябрь 2014 года",
-        event: [   
+        event: [
             "Участие в музыкальном проекте \"Три аккорда\"."
         ]
     },
@@ -278,33 +279,37 @@ const photos = [
     {
         img: image1,
         title: 'Вологда',
-        featured: true,
-    },
-    {
-        img: image2,
-        title: 'Гомель',
     },
     {
         img: image3,
         title: 'Сочи',
     },
     {
+        img: image2,
+        title: 'Гомель',
+        featured: true
+    },
+    {
         img: image4,
         title: 'Фабрика звезд',
     },
     {
+        img: image7,
+        title: 'Телесериал "Куба"',
+    },
+    {
         img: image5,
         title: 'Омск',
+        featured: true
     },
     {
         img: image6,
         title: 'Воронеж',
-        featured: true,
     },
     {
-        img: image7,
-        title: 'Телесериал "Куба"',
-    }
+        img: image8,
+        title: 'Красногорск',
+    },
 ];
 const video = "https://www.youtube.com/embed/OlbkXZGH0JI?si=R7pd6PB9VZ9kIcWg";
 
