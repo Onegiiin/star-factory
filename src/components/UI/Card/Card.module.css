@@ -9,6 +9,7 @@
     height: auto;
     backdrop-filter: blur(20px);
     background-color: rgba(12, 17, 23, 0.3);
+    margin-top: 50px;
 }
 
 /*ФИО*/

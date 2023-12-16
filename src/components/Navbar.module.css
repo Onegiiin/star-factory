@@ -11,11 +11,12 @@
 
 }
 
-.txt{
+.txt {
     font-family: Comfortaa;
     font-size: 24px;
     color: gold;
 }
+
 .pads {
     padding: 10px 50px;
 }
@@ -31,3 +32,21 @@
     --bs-navbar-toggler-border-color: rgba(255, 255, 255, 0.1);
 }
 
+.element {
+    padding-right: 30px;
+}
+
+.btn {
+    width: 75px !important;
+    --bs-btn-color: gold;
+    --bs-btn-bg: #0c1117;
+    --bs-btn-border-color: #212529;
+    --bs-btn-hover-color: #f4eaff;
+    --bs-btn-hover-bg: #000000;
+    --bs-btn-hover-border-color: gold;
+    --bs-btn-focus-shadow-rgb: 66, 70, 73;
+    --bs-btn-active-color: #f4eaff;
+    --bs-btn-active-bg: #000000;
+    --bs-btn-active-border-color: gold;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}

@@ -3,7 +3,7 @@ import classes from './ScrollableText.module.css';
 
 const ScrollableText = () => {
     return (
-        <div className={classes.scrol}>
+        <div id="aboutPortal" className={classes.scrol}>
             <div>
                 <h2>О веб-портале</h2>
         <div className={classes.cont}>
