@@ -9,7 +9,6 @@ p {
 }
 
 .TimeLineContainer {
-     margin-top: 100px;
-     backdrop-filter: blur(20px);
-     background-color: rgba(12, 17, 23, 0.3);
+     margin: 225px 0;
+     backdrop-filter: blur(10px);
  }
