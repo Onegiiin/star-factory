@@ -21,8 +21,7 @@
 .personContainer img{
     max-width: 100%;
     max-height: 100%;
-    object-fit: cover; 
-    border: 2px solid #fff;
+    object-fit: cover;
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.8); 
 }
 
@@ -52,9 +51,13 @@
     margin-right: 20px;
 }
 
+.descriptionContainer p {
+    color: #f4eaff;
+}
+
 .secondParagraph {
     margin-bottom: 28px;
     margin-top: -10px;
-} 
+}
 
 
