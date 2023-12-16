@@ -1,7 +1,35 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import classes from './ScrollableText.module.css';
+import {Carousel} from "bootstrap";
 
 const ScrollableText = () => {
+        const [aboutInitialized, setAboutInitialized] = useState(false);
+
+        useEffect(() => {
+            const carousel = new Carousel(document.getElementById('myCarousel'), {
+                interval: 2000,
+            });
+
+            setAboutInitialized(true);
+
+            return () => {
+                carousel.dispose();
+            };
+        }, []);
+
+        useEffect(() => {
+            const hash = window.location.hash;
+            if (aboutInitialized && hash === '#aboutPortal') {
+                const scrollToDevs = () => {
+                    const devsElement = document.getElementById('aboutPortal');
+                    if (devsElement) {
+                        devsElement.scrollIntoView({ behavior: 'smooth' });
+                    }
+                };
+                setTimeout(scrollToDevs, 0);
+            }
+        }, [aboutInitialized]);
+
     return (
         <div id="aboutPortal" className={classes.scrol}>
             <div>

@@ -31,19 +31,17 @@ const MyNavbar = () => {
                     <div className={`collapse navbar-collapse ${classes.nvb}`} id="navbarSupportedContent">
                         <ul className={`navbar-nav me-auto mb-2 mb-lg-0 ${classes.txt}`}>
                             <li className={`nav-item ${classes.element}`}>
-                                <NavLink className="nav-link active" aria-current="page" to="/home"
-                                         onClick={handleNavLinkClick}>
+                                <NavLink className="nav-link active" aria-current="page" to="/home">
                                     Главная
                                 </NavLink>
                             </li>
                             <li className={`nav-item ${classes.element}`}>
-                                <NavLink className="nav-link active" to="/list" onClick={handleNavLinkClick}>
+                                <NavLink className="nav-link active" to="/list">
                                     Поиск артистов
                                 </NavLink>
                             </li>
                             <li className={`nav-item ${classes.element}`}>
-                                <NavLink className="nav-link active" to="/home#aboutPortal"
-                                         onClick={handleNavLinkClick}>
+                                <NavLink className="nav-link active" to="/home#aboutPortal">
                                     О портале
                                 </NavLink>
                             </li>
@@ -52,8 +50,7 @@ const MyNavbar = () => {
                                     className="nav-link active"
                                     aria-current="page"
                                     to="/home#devs"
-                                    onClick={handleNavLinkClick}
-                                >
+                                    >
                                     О разработчиках
                                 </NavLink>
                             </li>
