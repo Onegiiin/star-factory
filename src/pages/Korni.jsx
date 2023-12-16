@@ -1,12 +1,12 @@
 import React from 'react';
 import PersonalElements from "../components/PersonalElements";
- import image1 from "../images/korni/1.jpg"
- import image2 from "../images/korni/2.jpg"
- import image3 from "../images/korni/3.jpg"
- import image4 from "../images/korni/4.jpg"
- import image5 from "../images/korni/5.jpg"
- import image6 from "../images/korni/6.jpg"
- import image7 from "../images/korni/7.jpg"
+import image1 from "../images/korni/1.jpg"
+import image2 from "../images/korni/2.jpg"
+import image3 from "../images/korni/3.jpg"
+import image4 from "../images/korni/4.jpg"
+import image5 from "../images/korni/5.jpg"
+import image6 from "../images/korni/6.jpg"
+import image7 from "../images/korni/7.jpg"
 import main from "../images/Card1.jpg"
 import classes from "./Korni.module.css"
 import Navbar from "../components/Navbar";
