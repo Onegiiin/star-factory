@@ -11,6 +11,7 @@ import classes from './CustomTimeline.module.css'
 export default function CustomTimeline(props) {
     return (
         <div className={classes.TimeLineContainer}>
+            <h2>Биография</h2>
             <Timeline position="alternate-reverse">
                 {props.bio.map((curr, ind) =>
                     <TimelineItem>
