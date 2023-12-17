@@ -27,15 +27,15 @@ const info = {
     gender: "woman",
     mainImg: main,
     season: 2,
-    shortInfo: "Полина Сергеевна Гагарина — российская эстрадная певица, актриса кино, телевидения, озвучивания и дубляжа, композитор и фотомодель. После победы на «Фабрике звезд» Полина Гагарина стала одной из ярких звёзд мировой музыкальной сцены. Её эмоциональные и мощные выступления завоевали сердца слушателей не только в России, но и за рубежом, открыв ей двери к международному признанию.",
-    born: "27 марта 1987",
-    death: "настоящее время",
+    shortInfo: "gagarina.short",
+    born: "gagarina.born",
+    death: "nowadays",
     mapCenter: [55.75, 37.61],
     mapMarkers: [[55.75, 37.61]]
 };
 const bio = [
     {
-        time: "27 марта 1987",
+        time: "gagarina.date1",
         event: [
             "gagarina.bio1"
         ]
@@ -47,7 +47,7 @@ const bio = [
         ]
     },
     {
-        time: "Сентябрь 1993",
+        time: "gagarina.date2",
         event: [
             "gagarina.bio3"
         ]
@@ -80,49 +80,49 @@ const bio = [
         ]
     },
     {
-        time: "Весна 2011",
+        time: "gagarina.date3",
         event: [
             "gagarina.bio16"
         ]
     },
     {
-        time: "Апрель 2011",
+        time: "gagarina.date4",
         event: [
             "gagarina.bio17"
         ]
     },
     {
-        time: "Август 2011",
+        time: "gagarina.date5",
         event: [
             "gagarina.bio18"
         ]
     },
     {
-        time: "Конец 2011",
+        time: "gagarina.date6",
         event: [
             "gagarina.bio19"
         ]
     },
     {
-        time: "Январь 2012",
+        time: "gagarina.date7",
         event: [
             "gagarina.bio20"
         ]
     },
     {
-        time: "Лето 2012",
+        time: "gagarina.date8",
         event: [
             "gagarina.bio21"
         ]
     },
     {
-        time: "Август 2012",
+        time: "gagarina.date9",
         event: [
             "gagarina.bio22"
         ]
     },
     {
-        time: "Сентябрь 2012",
+        time: "gagarina.date10",
         event: [
             "gagarina.bio23",
             "gagarina.bio24",
@@ -131,19 +131,19 @@ const bio = [
         ]
     },
     {
-        time: "Апрель 2013",
+        time: "gagarina.date11",
         event: [
             "gagarina.bio27"
         ]
     },
     {
-        time: "Май 2013",
+        time: "gagarina.date12",
         event: [
             "gagarina.bio28"
         ]
     },
     {
-        time: "Июнь 2013",
+        time: "gagarina.date13",
         event: [
             "gagarina.bio29",
             "gagarina.bio30"
@@ -156,43 +156,43 @@ const bio = [
         ]
     },
     {
-        time: "Март 2015",
+        time: "gagarina.date14",
         event: [
             "gagarina.bio32"
         ]
     },
     {
-        time: "19 мая 2015",
+        time: "gagarina.date15",
         event: [
             "gagarina.bio33"
         ]
     },
     {
-        time: "23 мая 2015",
+        time: "gagarina.date16",
         event: [
             "gagarina.bio34"
         ]
     },
     {
-        time: "Июнь 2015",
+        time: "gagarina.date17",
         event: [
             "gagarina.bio35"
         ]
     },
     {
-        time: "Июль 2015",
+        time: "gagarina.date18",
         event: [
             "gagarina.bio36"
         ]
     },
     {
-        time: "Сентябрь 2015",
+        time: "gagarina.date19",
         event: [
             "gagarina.bio37"
         ]
     },
     {
-        time: "Октябрь 2015",
+        time: "gagarina.date20",
         event: [
             "gagarina.bio38"
         ]
