@@ -266,37 +266,37 @@ const bio = [
 const photos = [
     {
         img: image1,
-        title: 'Вологда',
+        title: "dubcova.img1"
     },
     {
         img: image3,
-        title: 'Сочи',
+        title: "dubcova.img3"
     },
     {
         img: image2,
-        title: 'Гомель',
+        title: "dubcova.img2",
         featured: true
     },
     {
         img: image4,
-        title: 'Фабрика звезд',
+        title: "dubcova.img4"
     },
     {
         img: image7,
-        title: 'Телесериал "Куба"',
+        title: "dubcova.img7"
     },
     {
         img: image5,
-        title: 'Омск',
+        title: "dubcova.img5",
         featured: true
     },
     {
         img: image6,
-        title: 'Воронеж',
+        title: "dubcova.img6"
     },
     {
         img: image8,
-        title: 'Красногорск',
+        title: "dubcova.img18"
     },
 ];
 const video = "https://www.youtube.com/embed/OlbkXZGH0JI?si=R7pd6PB9VZ9kIcWg";

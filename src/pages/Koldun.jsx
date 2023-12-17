@@ -149,37 +149,37 @@ const bio = [
 const photos = [
     {
         img: image1,
-        title: 'Краснодар',
+        title: "koldun.img1",
         featured: true,
     },
     {
         img: image2,
-        title: 'Фабрика звезд',
+        title: "koldun.img2",
     },
     {
         img: image3,
-        title: 'Авторадио',
+        title: "koldun.img3",
     },
     {
         img: image4,
-        title: 'Золотой граммофон',
+        title: "koldun.img4",
     },
     {
         img: image5,
-        title: 'Гомель',
+        title: "koldun.img5",
     },
     {
         img: image6,
-        title: 'Русское радио',
+        title: "koldun.img6",
         featured: true,
     },
     {
         img: image7,
-        title: 'Нижневартовск',
+        title:"koldun.img7",
     },
     {
         img: image8,
-        title: 'Евровидение',
+        title: "koldun.img8",
     }
 ];
 

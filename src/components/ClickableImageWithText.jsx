@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, CardContent, Typography } from '@mui/material';
 import classes from "./ClickableImageWithText.module.css"
 
-const ClickableImageWithText = ({ imageUrl, text, shortInfo, born }) => {
+const ClickableImageWithText = ({ imageUrl, text}) => {
     return (
         <div>
             <div className={classes.container}>

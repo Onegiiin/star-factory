@@ -1,4 +1,5 @@
 {
+  "artist": "Artist",
   "navbar": {
     "btnLng": "ENG",
     "home": "Home",
@@ -36,7 +37,9 @@
     "title": "Developers"
   },
   "plashka": {
-    "title": "Artist of the Day"
+    "title": "Artist of the Day",
+    "years": "Date of birth ",
+    "yearsGroup": "The year of the group's creation "
   },
   "list": {
     "title": "Winners",
@@ -78,7 +81,15 @@
     "bio20": "2016 - Participation in a new season of the show \"Like Two Drops of Water\" on the \"First Channel\".",
     "bio21": "2017 - Performance at the opening of the XXVI Arts Festival \"Slavic Bazaar in Vitebsk\" with the song \"Friday\".",
     "bio22": "2021 - Release of the single \"All Over Again\".",
-    "bio23": "2022 - Participation in the show \"Fantastika\" on the First Channel as an artist, character Phantom."
+    "bio23": "2022 - Participation in the show \"Fantastika\" on the First Channel as an artist, character Phantom.",
+    "img1": "Krasnodar",
+    "img2": "Star Factory",
+    "img3": "Autoradio",
+    "img4": "Golden Gramophone",
+    "img5": "Gomel",
+    "img6": "Russian Radio",
+    "img7": "Nizhnevartovsk",
+    "img8": "Eurovision Song Contest"
   },
   "daineko": {
     "name": "Victoria Daineko",
@@ -187,7 +198,15 @@
     "bio43": "Premiere of the single \"How Are You? Where Are You?\".",
     "bio44": "Premiere of the song \"For Us\" on Russian Radio.",
     "bio45": "Premiere of the song \"Horoscopes\".",
-    "bio46": "Premiere of the series \"Prestige\" on START and STS, where Irina Dubtsova played one of the main roles."
+    "bio46": "Premiere of the series \"Prestige\" on START and STS, where Irina Dubtsova played one of the main roles.",
+    "img1": "Vologda",
+    "img2": "Gomel",
+    "img3": "Sochi",
+    "img4": "Star Factory",
+    "img5": "Omsk",
+    "img6": "Voronezh",
+    "img7": "TV Series \"Cuba\"",
+    "img8": "Krasnogorsk"
   },
   "gagarina": {
     "name": "Polina Gagarina",
@@ -250,7 +269,14 @@
     "bio35": "End of collaboration with Konstantin Meladze.",
     "bio36": "Performance with the song \"A Million Voices\" at the draw of the qualifying tournament for the 2018 FIFA World Cup and at the closing ceremony of the World Aquatics Championships in Kazan.",
     "bio37": "Participation in the TV project \"The Voice\" on Channel One as a mentor. Release of the new single \"I Won't\" and its music video.",
-    "bio38": "Returning as a mentor on the show \"The Voice\"."
+    "bio38": "Returning as a mentor on the show \"The Voice\".",
+    "img1": "Victory on RU.TV",
+    "img2": "Eurovision 2015",
+    "img3": "Novosibirsk",
+    "img4": "Chelyabinsk",
+    "img5": "Minsk",
+    "img6": "Show \"Voice\"",
+    "img7": "Music show \"Forever\""
   },
   "hasanova": {
     "name": "Guzel Hasanova",
@@ -268,7 +294,12 @@
     "bio10": "Participation in the show \"New Star Factory\".",
     "bio11": "December 9: Victory, performance of Irina Dubtsova's \"Find Me\".",
     "bio12": "Release of the mini-album \"Despair\".",
-    "bio13": "Release of new tracks, including \"Main Thing\" and \"Dance\"."
+    "bio13": "Release of new tracks, including \"Main Thing\" and \"Dance\".",
+    "img1": "X-factor",
+    "img2": "New Factory of Stars",
+    "img4": "Moscow",
+    "img5": "Ulyanovsk",
+    "img7": "Sochi"
   },
   "korni": {
     "name": "The group \"Korni\"",
@@ -294,7 +325,13 @@
     "bio18": "Recording of the single \"Ne mozhet byt'\" in April with a new soloist.",
     "bio19": "Release of the song \"Eto ne spam\" at the end of the year.",
     "bio20": "Participation in the project \"Star Factory. Return\" in March, in the team of the producer Igor Matvienko.",
-    "bio21": "Receiving four \"Golden Gramophone\" awards, including \"Prosto lyubov\" (together with Lube, In2nation)."
+    "bio21": "Receiving four \"Golden Gramophone\" awards, including \"Prosto lyubov\" (together with Lube, In2nation).",
+    "img1": "Minsk",
+    "img3": "Grodno",
+    "img4": "Brest",
+    "img5": "Moscow",
+    "img7": "Brest",
+    "img8": "Pskov"
   },
   "prihodko": {
     "name": "Anastasiya Prikhodko",
@@ -312,6 +349,9 @@
     "bio10": "Announcement of retirement from the stage.",
     "bio11": "Joining the party \"Batkivshchyna\".",
     "bio12": "Leaving the party and returning to music.",
-    "bio13": "Release of the song \"Podruga\" and the music video \"Stepom\" (June 22)."
+    "bio13": "Release of the song \"Podruga\" and the music video \"Stepom\" (June 22).",
+    "img1": "Moscow",
+    "img7": "Kiev",
+    "img4": "Eurovision 2011"
   }
 }

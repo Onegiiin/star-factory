@@ -8,13 +8,16 @@ import {useTranslation} from 'react-i18next';
 const MyNavbar = () => {
     const {t, i18n} = useTranslation();
 
-    const handleLangClick = () => {
-        if (i18n.language === "ru")
-            i18n.changeLanguage("en");
-        else
-            i18n.changeLanguage("ru")
+    const savedLanguage = localStorage.getItem('language');
+    if (savedLanguage && i18n.language !== savedLanguage) {
+        i18n.changeLanguage(savedLanguage);
     }
 
+    const handleLangClick = () => {
+        const newLanguage = i18n.language === 'ru' ? 'en' : 'ru';
+        i18n.changeLanguage(newLanguage);
+        localStorage.setItem('language', newLanguage);
+    }
 
     return (
         <div className={`${classes.nvbr}`}>
