@@ -10,7 +10,7 @@ const ClickableImageWithText = ({ imageUrl, text, shortInfo, born }) => {
                     <div className={classes.cardContainer}>
                         <img src={imageUrl} alt="Image" className={classes.image} />
                         <div className={classes.textOverlay}>
-                            <Typography variant="body1" className={classes.text}>
+                            <Typography variant="body1" className={classes.names}>
                                 {text}
                             </Typography>
                         </div>
