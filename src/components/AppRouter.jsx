@@ -1,14 +1,14 @@
 import React from 'react';
 import {Navigate, Route, Routes} from "react-router-dom";
-import Home from "../pages/Home";
-import Koldun from "../pages/Koldun";
-import Hasanova from "../pages/Hasanova";
-import Daineko from "../pages/Daineko";
-import Dubcova from "../pages/Dubcova";
-import Gagarina from "../pages/Gagarina";
-import Korni from "../pages/Korni";
-import List from "../pages/List"
-import Prihodko from "../pages/Prihodko";
+import Home from "../pages/Home/Home";
+import Koldun from "../pages/Koldun/Koldun";
+import Hasanova from "../pages/Hasanova/Hasanova";
+import Daineko from "../pages/Daineko/Daineko";
+import Dubcova from "../pages/Dubcova/Dubcova";
+import Gagarina from "../pages/Gagarina/Gagarina";
+import Korni from "../pages/Korni/Korni";
+import List from "../pages/List/List"
+import Prihodko from "../pages/Prihodko/Prihodko";
 
 const AppRouter = () => {
     return (

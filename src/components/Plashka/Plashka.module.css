@@ -1,0 +1,57 @@
+.content {
+    justify-content: left;
+    align-items: center;
+    width: 1200px;
+    text-align: left;
+    margin: 0px auto;
+    padding: 20px;
+    font-family: Comfortaa;
+    color: #f4eaff;
+    display: flex;
+    font-size: 20px;
+    backdrop-filter: blur(3px);
+    background-color: rgba(12, 17, 23, 0.8);
+    text-decoration: none;
+    pointer-events: none;
+}
+
+.borderedDivStyle {
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto;
+    width: 1204px;
+    border: 2px solid gold;
+}
+
+@media only screen and (max-width: 1200px) {
+    .content {
+        width: 800px;
+    }
+
+    .borderedDivStyle {
+        width: 804px;
+    }
+}
+
+
+@media only screen and (max-width: 850px) {
+    .content {
+        width: 500px;
+        font-size: 16px;
+    }
+
+    .borderedDivStyle {
+        width: 504px;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .content {
+        width: 300px;
+        font-size: 10px;
+    }
+
+    .borderedDivStyle {
+        width: 304px;
+    }
+}

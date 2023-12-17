@@ -1,0 +1,74 @@
+.bgImg {
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../images/backs/back1.png");
+    background-size: 86vw;
+    background-repeat: repeat-y;
+    background-position: top;
+    position: center;
+    top:0;
+    background-color: #0c1117;
+    z-index: -1;
+}
+
+h2 {
+    font-family: Metropoliten;
+    font-size: 89px;
+    display: flex;
+    letter-spacing: 4px;
+    color: gold;
+    justify-content: center;
+}
+
+p {
+    font-family: Comfortaa;
+    font-size: 16px;
+    display: flex;
+    letter-spacing: 0px;
+    color: #f4eaff;
+    justify-content: left;
+}
+
+.srcol{
+    align-items: center;
+    position: center;
+    justify-content: center;
+    display: flex;
+}
+
+@media only screen and (max-width: 1400px) {
+    .bgImg {
+        background-size: 100vw;
+        max-width: 100vw;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    h2 {
+        font-size: 69px;
+        letter-spacing: 3px;
+    }
+
+}
+
+@media only screen and (max-width: 720px) {
+    h2 {
+        font-size: 49px;
+        letter-spacing: 2px;
+    }
+    p {
+        font-size: 12px;
+    }
+
+}
+
+@media only screen and (max-width: 560px) {
+    h2 {
+        font-size: 29px;
+        letter-spacing: 1px;
+    }
+    p {
+        font-size: 10px;
+    }
+}
+

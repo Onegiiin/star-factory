@@ -1,0 +1,91 @@
+.cardContainer {
+    position: relative;
+    max-width: fit-content;
+}
+
+.image {
+    width: 900px;
+    height: 471px;
+}
+
+.textOverlay {
+    position: absolute;
+    margin-bottom: -10px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+}
+
+.text {
+    font-family: "journalism" !important;
+    color: rgba(255, 215, 0, 1);
+    margin: 0;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 112px!important;
+    white-space: nowrap;
+}
+
+.card {
+    display: inline-block;
+}
+
+
+.container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 20px;
+}
+
+
+@media only screen and (max-width: 1100px) {
+    .image {
+        width: 650px;
+        height: 340px;
+    }
+
+
+    .text {
+        font-size: 95px !important;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .image {
+        width: 450px;
+        height: 235px;
+    }
+
+    .text {
+        font-size: 65px !important;
+    }
+
+}
+
+
+@media only screen and (max-width: 560px) {
+    .image {
+        width: 320px;
+        height: 167px;
+    }
+
+
+    .text {
+        font-size: 46px !important;
+    }
+
+    .textOverlay {
+        margin-bottom: 0px;
+
+    }
+    .container {
+        justify-content: center;
+        padding: 20px 0 20px 0;
+    }
+}

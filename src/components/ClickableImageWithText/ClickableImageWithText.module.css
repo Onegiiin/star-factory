@@ -1,0 +1,108 @@
+.cardContainer {
+    position: relative;
+    max-width: fit-content;
+}
+
+.image {
+    width: 1200px;
+    height: 628px;
+}
+
+.textOverlay {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.0);
+    width: 100%;
+}
+
+.names {
+    font-family: journalism !important;
+    color: rgba(255, 215, 0, 1);
+    margin: 0;
+    display: inline-block;
+    font-size: 150px !important;
+    white-space: nowrap;
+}
+
+.card {
+    display: inline-block;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    justify-content: left;
+    align-items: center;
+    width: 1200px;
+    text-align: left;
+    margin: 0 auto;
+    padding: 0;
+    font-family: Comfortaa;
+    color: rgba(255, 215, 0, 1);
+    display: flex;
+    font-size: 20px;
+    backdrop-filter: blur(20px);
+    background-color: rgba(0, 0, 0, 0);
+    text-decoration: none;
+    pointer-events: none;
+}
+@media only screen and (max-width: 1400px) {
+
+}
+
+@media only screen and (max-width: 1300px) {
+
+}
+
+@media only screen and (max-width: 1200px) {
+    .image {
+        width: 800px;
+        height: 419px;
+    }
+    .names {
+        font-family: journalism !important;
+        font-size: 120px !important;
+    }
+
+}
+
+
+@media only screen and (max-width: 850px) {
+    .image {
+        width: 500px;
+        height: 262px;
+    }
+    .names {
+        font-family: journalism !important;
+        font-size: 73px !important;
+    }
+
+    .content {
+        font-size: 16px;
+    }
+
+}
+
+
+@media only screen and (max-width: 560px) {
+    .image {
+        width: 300px;
+        height: 140px;
+    }
+    .names {
+        font-family: journalism !important;
+        font-size: 40px !important;
+    }
+
+    .content {
+        font-size: 12px;
+    }
+
+}

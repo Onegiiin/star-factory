@@ -1,0 +1,18 @@
+.bgImg {
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../images/backs/dubcovaback.png");
+    background-size: 86vw;
+    background-repeat: repeat-y;
+    background-position: top;
+    position: center;
+    top:0;
+    background-color: #0c1117;
+    z-index: -1;
+}
+
+@media only screen and (max-width: 1400px) {
+    .bgImg {
+        background-size: 100vw;
+    }
+}

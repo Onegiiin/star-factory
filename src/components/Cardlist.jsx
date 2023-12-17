@@ -1,5 +1,5 @@
 import React from 'react';
-import ListElem from "./listElem";
+import ListElem from "./ListElem/listElem";
 
 const CardList = ({cards}) => {
     return (

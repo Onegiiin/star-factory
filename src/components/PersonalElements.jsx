@@ -1,7 +1,7 @@
 import React from 'react';
-import Card from "./UI/Card/Card";
-import ImageList from "./UI/ImageList/ImageList";
-import CustomTimeline from "./UI/CustomTimeLine/CustomTimeline";
+import Card from "./Card/Card";
+import ImageList from "./ImageList/ImageList";
+import CustomTimeline from "./CustomTimeLine/CustomTimeline";
 
 const PersonalElements = (props) => {
     return (
