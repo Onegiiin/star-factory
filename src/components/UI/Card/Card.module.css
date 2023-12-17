@@ -11,7 +11,6 @@
     background-color: rgba(12, 17, 23, 0.3);
     margin-top: 50px;
 }
-
 /*ФИО*/
 .personContainer h2{
     color:gold;
@@ -62,3 +61,94 @@
 }
 
 
+@media only screen and (max-width: 1400px) {
+    .descriptionContainer{
+        height: auto;
+    }
+}
+
+
+@media only screen and (max-width: 1100px) {
+    .personContainer {
+        width: 95%;
+    }
+    .yearAndMapContainer{
+        margin-bottom: 10px;
+    }
+}
+
+
+@media only screen and (max-width: 992px) {
+    .personContainer {
+        width: 98%;
+    }
+    .shortInfoContainer{
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .infoContainer p{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .descriptionContainer{
+        display: grid;
+        height: auto;
+        padding: 0;
+    }
+
+    .shortInfoContainer{
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .yearAndMapContainer{
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+}
+
+@media only screen and (max-width: 630px) {
+}
+
+@media only screen and (max-width: 560px) {
+}
+
+@media only screen and (max-width: 480px) {
+
+    .shortInfoContainer{
+
+        margin-right: 2vw;
+        margin-left: 6vw;
+    }
+
+    .yearAndMapContainer{
+        width: 80%;
+        margin-right: 15vw;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+
+
+}
+
+@media only screen and (max-width: 360px) {
+    .shortInfoContainer{
+        margin-left: 10vw;
+    }
+    .yearAndMapContainer{
+        width: 85vw;
+        margin-right: 0vw;
+        margin-left: 3vw;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+
+
+}

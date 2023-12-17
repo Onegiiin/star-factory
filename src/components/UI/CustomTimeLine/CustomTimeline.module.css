@@ -2,11 +2,12 @@ p {
     display: block;
 }
 
-.time{
+.time {
     font-family: Comfortaa;
     font-size: 20px;
     color: gold;
 }
+
 
 .TimeLineContainer {
     width: 1000px;
@@ -24,12 +25,87 @@ p {
     margin-top: 20px;
     color: gold;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
-    text-align:center;
+    text-align: center;
 }
+
 
 .yt {
     width: 800px;
     height: 450px;
     margin-left: 100px;
     margin-bottom: 20px;
+}
+
+
+@media only screen and (max-width: 1400px) {
+    .TimeLineContainer {
+        height: auto;
+    }
+
+    .yt {
+        width: 50%;
+        height: 25vh;
+        margin-left: 20vw;
+    }
+}
+
+
+@media only screen and (max-width: 1100px) {
+    .TimeLineContainer {
+        width: 95%;
+    }
+
+    .yt {
+        margin-left: 22vw;
+    }
+}
+
+
+@media only screen and (max-width: 992px) {
+    .TimeLineContainer {
+        width: 98%;
+    }
+
+    .yt {
+        margin-left: 22vw;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .TimeLineContainer p {
+        font-size: 14px;
+    }
+
+    .TimeLineContainer time {
+        font-size: 14px;
+    }
+
+    .yt {
+        margin-left: 25vw;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+
+}
+
+@media only screen and (max-width: 630px) {
+}
+
+@media only screen and (max-width: 560px) {
+}
+
+@media only screen and (max-width: 480px) {
+
+}
+
+@media only screen and (max-width: 420px) {
+
+}
+
+@media only screen and (max-width: 360px) {
+}
+
+@media only screen and (max-width: 320px) {
+
 }
