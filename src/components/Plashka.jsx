@@ -107,7 +107,7 @@ const WeeklyImage = () => {
             <NavLink to={currentImageData.persUrl}>
             <ClickableImageWithText imageUrl={currentImageData.imageUrl} text={currentImageData.text} shortInfo={currentImageData.shortInfo} born={currentImageData.born}/>
             </NavLink>
-            <p style={styles.content}>
+            <p className={classes.content}>
                 {currentImageData.shortInfo} Год рождения: {currentImageData.born}.
             </p>
             </div>
