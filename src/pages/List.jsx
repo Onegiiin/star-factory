@@ -62,9 +62,11 @@ const ListFin = () => {
         });
     }, []);
 
+    const { t, i18n } = useTranslation();
+
     const sortedSearchList = useMemo(() => {
         const filteredCards = cards.filter(card =>
-            card.text.toLowerCase().includes(searchQuery.toLowerCase())
+            t(card.text).toLowerCase().includes(t(searchQuery).toLowerCase()),
         );
 
         setHasSearchResults(filteredCards.length > 0); // Устанавливаем состояние наличия результатов поиска
@@ -90,7 +92,7 @@ const ListFin = () => {
         };
     }, [hasSearchResults]);
 
-    const { t, i18n } = useTranslation();
+
 
     return (
         <div className={`${classes.bgImg}`}>
