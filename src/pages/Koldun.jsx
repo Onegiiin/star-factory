@@ -28,9 +28,9 @@ const info = {
     gender: "man",
     mainImg: main,
     season: 6,
-    shortInfo: "Дми́трий Алекса́ндрович Колду́н — белорусский певец, поэт и композитор. Представлял Беларусь на конкурсе Евровидение 2007 года с песней «Work Your Magic», заняв 6-е место (лучший результат Беларуси за всё время участия в конкурсе). Дмитрий Колдун обладает не только уникальным вокалом, но и широким творческим спектром. После участия в Евровидении 2007 года он активно развивает свою музыкальную карьеру, выпуская хиты, которые пользуются популярностью как в Беларуси, так и за её пределами.",
-    born: "11 июня 1985",
-    death: "настоящее время",
+    shortInfo: "koldun.short",
+    born: "koldun.born",
+    death: "nowadays",
     mapCenter: [53.9, 27.5667],
     mapMarkers: [[53.9, 27.5667]]
 }
@@ -66,7 +66,7 @@ const bio = [
         ]
     },
     {
-        time: "Декабрь 2007 — март 2008",
+        time: "koldun.date1",
         event: [
             "koldun.bio10"  
         ]
@@ -85,37 +85,37 @@ const bio = [
         ]
     },
     {
-        time: "29 апреля 2009",
+        time: "koldun.date2",
         event: [
             "koldun.bio14"
         ]
     },
     {
-        time: "20 ноября 2010",
+        time: "koldun.date3",
         event: [
             "koldun.bio15"
         ]
     },
     {
-        time: "Март 2012",
+        time: "koldun.date4",
         event: [
             "koldun.bio16"
         ]
     },
     {
-        time: "Июнь 2012",
+        time: "koldun.date5",
         event: [
             "koldun.bio17"
         ]
     },
     {
-        time: "6 ноября 2013",
+        time: "koldun.date6",
         event: [
             "koldun.bio18"
         ]
     },
     {
-        time: "2 марта — 8 июня 2014",
+        time: "koldun.date7",
         event: [
             "koldun.bio19"
         ]

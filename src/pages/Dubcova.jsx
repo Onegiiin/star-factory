@@ -28,9 +28,9 @@ const info = {
     gender: "woman",
     mainImg: main,
     season: 4,
-    shortInfo: "Ирина Викторовна Дубцова — российская певица, поэтесса и композитор, бывшая солистка группы «Девочки» (1999—2001). Исполнительница собственных песен (как сольных, так и совместных), выпускница и победительница «Фабрики звёзд — 4», финалистка проекта «Фабрика звёзд. Возвращение». Ирина Дубцова прочно утвердилась как творческая личность, создавая хиты, которые завоевали популярность не только в России, но и за её пределами.",
-    born: "14 февраля 1982",
-    death: "настоящее время",
+    shortInfo: "dubcova.short",
+    born: "dubcova.born",
+    death: "nowadays",
     mapCenter: [48.72, 44.5],
     mapMarkers: [[48.72, 44.5]]
 };
@@ -51,27 +51,27 @@ const bio = [
         ]
     },
     {
-        time: "12 марта 2004",
+        time: "dubcova.date1",
         event: [
             "dubcova.bio6",
             "dubcova.bio7"
         ]
     },
     {
-        time: "Июнь 2004",
+        time: "dubcova.date2",
         event: [
             "dubcova.bio8",
             "dubcova.bio9"
         ]
     },
     {
-        time: "Февраль 2005",
+        time: "dubcova.date3",
         event: [
             "dubcova.bio10"
         ]
     },
     {
-        time: "19 июля 2007",
+        time: "dubcova.date4",
         event: [
             "dubcova.bio11",
             "dubcova.bio12",
@@ -92,172 +92,172 @@ const bio = [
         ]
     },
     {
-        time: "Весна 2012",
+        time: "dubcova.date5",
         event: [
             "dubcova.bio17",
             "dubcova.bio18"
         ]
     },
     {
-        time: "Осень 2012",
+        time: "dubcova.date6",
         event: [
             "dubcova.bio19"
         ]
     },
     {
-        time: "1 декабря 2012",
+        time: "dubcova.date7",
         event: [
             "dubcova.bio20"
         ]
     },
     {
-        time: "5 января 2013",
+        time: "dubcova.date8",
         event: [
             "dubcova.bio21"
         ]
     },
     {
-        time: "Июнь 2013",
+        time: "dubcova.date9",
         event: [
             "dubcova.bio22"
         ]
     },
     {
-        time: "Осень 2013",
+        time: "dubcova.date10",
         event: [
             "dubcova.bio23"
         ]
     },
     {
-        time: "Начало 2014 года",
+        time: "dubcova.date11",
         event: [
             "dubcova.bio24"
         ]
 
     },
     {
-        time: "Март 2014 года:",
+        time: "dubcova.date12",
         event: [
             "dubcova.bio25",
             "dubcova.bio26"
         ]
     },
     {
-        time: "Июль 2014 года",
+        time: "dubcova.date13",
         event: [
             "dubcova.bio27"
         ]
     },
     {
-        time: "Сентябрь 2014 года",
+        time: "dubcova.date14",
         event: [
             "dubcova.bio28"
         ]
     },
     {
-        time: "Начало 2015",
+        time: "dubcova.date15",
         event: [
             "dubcova.bio29"
         ]
     },
     {
-        time: "25 января 2015 года:",
+        time: "dubcova.date16",
         event: [
             "dubcova.bio30"
         ]
     },
     {
-        time: "3 февраля 2015 года",
+        time: "dubcova.date17",
         event: [
             "dubcova.bio31"
         ]
     },
     {
-        time: "Февраль 2016",
+        time: "dubcova.date18",
         event: [
             "dubcova.bio32"
         ]
     },
     {
-        time: "23 марта 2016",
+        time: "dubcova.date19",
         event: [
             "dubcova.bio33"
         ]
     },
     {
-        time: "29 марта 2016",
+        time: "dubcova.date20",
         event: [
             "dubcova.bio34"
         ]
     },
     {
-        time: "21 июля 2016",
+        time: "dubcova.date21",
         event: [
             "dubcova.bio35"
         ]
     },
     {
-        time: "28 апреля 2016",
+        time: "dubcova.date22",
         event: [
             "dubcova.bio36"
         ]
     },
     {
-        time: "19 ноября 2016",
+        time: "dubcova.date23",
         event: [
             "dubcova.bio37"
         ]
     },
     {
-        time: "3 декабря 2016",
+        time: "dubcova.date24",
         event: [
             "dubcova.bio38"
         ]
     },
     {
-        time: "Конец 2016",
+        time: "dubcova.date25",
         event: [
             "dubcova.bio39"
         ]
     },
     {
-        time: "Февраль 2017",
+        time: "dubcova.date26",
         event: [
             "dubcova.bio40"
         ]
     },
     {
-        time: "12 ноября 2017",
+        time: "dubcova.date27",
         event: [
             "dubcova.bio41"
         ]
     },
     {
-        time: "14 февраля 2022",
+        time: "dubcova.date28",
         event: [
             "dubcova.bio42"
         ]
     },
     {
-        time: "21 октября 2022",
+        time: "dubcova.date29",
         event: [
             "dubcova.bio43"
         ]
     },
     {
-        time: "12 июня 2023",
+        time: "dubcova.date30",
         event: [
             "dubcova.bio44"
         ]
     },
     {
-        time: "23 июня 2023",
+        time: "dubcova.date31",
         event: [
             "dubcova.bio45"
         ]
     },
     {
-        time: "Осень 2023",
+        time: "dubcova.date32",
         event: [
             "dubcova.bio46"
         ]
