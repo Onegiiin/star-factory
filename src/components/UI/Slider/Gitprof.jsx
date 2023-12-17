@@ -5,9 +5,13 @@ import devs from '../../../images/back1deves.png';
 import Avatar from 'react-avatar';
 import classes from './Gitprof.module.css';
 import {useTranslation} from "react-i18next";
+import {useMediaQuery} from 'react-responsive'
 
 
 const MyCustomCarousel = () => {
+    const isMobile = useMediaQuery({ maxWidth: 850 });
+
+    const avatarSize = isMobile ? 100 : 200;
     const [carouselInitialized, setCarouselInitialized] = useState(false);
 
     useEffect(() => {
@@ -44,8 +48,8 @@ const MyCustomCarousel = () => {
                 <div className="carousel-inner ">
                     <div className="carousel-item active " data-bs-interval="10000">
                         <img src={devs} className={`d-block mx-auto ${classes.vst}`} />
-                        <div className={`carousel-caption d-none d-md-block`}>
-                            <Avatar src='https://avatars.githubusercontent.com/u/120668210?v=4' size="200" round={true} className={classes.avatarPosition}/>
+                        <div className={`carousel-caption d-md-block`}>
+                            <Avatar src='https://avatars.githubusercontent.com/u/120668210?v=4' size={avatarSize} round={true} className={classes.avatarPosition}/>
                             <div className={classes.viS}>
                             <h5>dif76oq</h5>
                             <a href={'https://github.com/dif76oq'} target="_blank">https://github.com/dif76oq</a>
@@ -54,8 +58,8 @@ const MyCustomCarousel = () => {
                     </div>
                 <div className="carousel-item" data-bs-interval="10000">
                     <img src={devs} className={`d-block mx-auto ${classes.vst}`} />
-                    <div className={`carousel-caption d-none d-md-block`}>
-                        <Avatar src='https://avatars.githubusercontent.com/u/85400754?v=4' size="200" round={true} className={classes.avatarPosition}/>
+                    <div className={`carousel-caption  d-md-block`}>
+                        <Avatar src='https://avatars.githubusercontent.com/u/85400754?v=4' size={avatarSize} round={true} className={classes.avatarPosition}/>
                         <div className={classes.viS}>
                             <h5>kedr4</h5>
                             <a href={'https://github.com/kedr4'} target="_blank">https://github.com/kedr4</a>
@@ -64,8 +68,8 @@ const MyCustomCarousel = () => {
                 </div>
                 <div className="carousel-item" data-bs-interval="10000">
                         <img src={devs} className={`d-block mx-auto ${classes.vst}`} />
-                        <div className={`carousel-caption d-none d-md-block`}>
-                            <Avatar src='https://avatars.githubusercontent.com/u/120414874?v=4' size="200" round={true} className={classes.avatarPosition}/>
+                        <div className={`carousel-caption  d-md-block`}>
+                            <Avatar src='https://avatars.githubusercontent.com/u/120414874?v=4' size={avatarSize} round={true} className={classes.avatarPosition}/>
                             <div className={classes.viS}>
                                 <h5>ZKMLrabotaem</h5>
                                 <a href={'https://github.com/ZKMLrabotaem'} target="_blank">https://github.com/ZKMLrabotaem</a>
@@ -74,8 +78,8 @@ const MyCustomCarousel = () => {
                 </div>
                     <div className="carousel-item" data-bs-interval="10000">
                         <img src={devs} className={`d-block mx-auto ${classes.vst}`} />
-                        <div className={`carousel-caption d-none d-md-block`}>
-                            <Avatar src='https://avatars.githubusercontent.com/u/115876035?v=4' size="200" round={true} className={classes.avatarPosition}/>
+                        <div className={`carousel-caption  d-md-block`}>
+                            <Avatar src='https://avatars.githubusercontent.com/u/115876035?v=4' size={avatarSize} round={true} className={classes.avatarPosition}/>
                             <div className={classes.viS}>
                                 <h5>Onegiiin</h5>
                                 <a href={'https://github.com/Onegiiin'} target="_blank">https://github.com/Onegiiin </a>

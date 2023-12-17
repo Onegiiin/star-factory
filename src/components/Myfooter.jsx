@@ -94,8 +94,8 @@ const MyFooter = () => {
             <div className="container">
                 <div className="row">
                     <div className="col d-flex align-items-center justify-content-between">
-                        <img src={logo} alt="Logo" />
-                        <div style={{ display: 'flex', flexDirection: 'column' }}>
+                        <img className={classes.logo} src={logo} alt="Logo" />
+                        <div className={classes.icn}>
                             <div style={{ display: 'flex' }}>
                                 <a href='https://vk.com/fabrika_zvezd' target="_blank">
                                 <IconButton onMouseEnter={handleVkHover}
