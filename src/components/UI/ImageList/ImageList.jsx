@@ -7,6 +7,7 @@ import PlaceOutlinedIcon from '@mui/icons-material/PlaceOutlined';
 import {useState} from "react";
 import classes from './ImageList.module.css'
 import {useTranslation} from "react-i18next";
+import {useMediaQuery} from "react-responsive";
 
 function srcset(image, width, height, rows = 1, cols = 1) {
     return {
@@ -27,9 +28,11 @@ export default function CustomImageList(props) {
         setOpen(true);
     }
     const {t, i18n} = useTranslation();
+    const isMobile = useMediaQuery({maxWidth: 720});
+
 
     return (
-        <div>
+        <div className={classes.ILContainer}>
             <h2>{t("photogallery")}</h2>
             {open && (
                 <div>
@@ -53,7 +56,7 @@ export default function CustomImageList(props) {
                             transform: "translate(-50%, -50%)",
                             maxWidth: "100%",
                             maxHeight: "100%",
-                            objectFit: "none",
+                            objectFit: "scale-down",
                             zIndex: 2,
                         }}
                         onClick={() => setOpen(false)}
@@ -64,7 +67,7 @@ export default function CustomImageList(props) {
             )}
             <ImageList className={classes.ImageListBackground} style={{marginLeft: "auto", marginRight: "auto"}}
                        sx={{
-                           width: 1000,
+                           width: "100%",
                            height: 800,
                            // Promote the list into its own layer in Chrome. This costs memory, but helps keeping high FPS.
                            transform: 'translateZ(0)',
@@ -76,10 +79,14 @@ export default function CustomImageList(props) {
                        rowHeight={400}
                        gap={2}
             >
-                {props.photos.map((item) => {
+                {props.photos.map((rowItem) => {
+                    const item = { ...rowItem }
+                    if (isMobile)
+                        item.featured = true;
+                    else
+                        item.featured = rowItem.featured;
                     const cols = item.featured ? 2 : 1;
                     const rows = item.featured ? 2 : 1;
-
                     return (
                         <ImageListItem key={item.img} cols={cols} rows={rows}>
                             <img
