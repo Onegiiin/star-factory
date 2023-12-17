@@ -2,7 +2,7 @@
     --bs-navbar-padding-x: 20px;
     background-color: transparent;
     backdrop-filter: blur(6px);
-    width: 1600px;
+    width: 86vw;
     object-position: center;
     position: static;
     justify-content: center;
@@ -63,8 +63,10 @@
 
 @media only screen and (max-width: 1400px) {
     .nvbr {
-        width: auto;
+        width: 100vw;
+
     }
+
     .txt {
         margin: 0 auto 0 0;
         font-family: Comfortaa;
