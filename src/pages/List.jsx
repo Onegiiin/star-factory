@@ -111,7 +111,7 @@ const ListFin = () => {
                             <CardList cards={sortedSearchList} />
                         ) : (
                             <div>
-                                <span className={classes.emptyResults} style={{ position: 'absolute', top: '50%', transform: 'translateY(-50%)' }}>
+                                <span className={classes.emptyResults} style={{ position: 'absolute', top: '50%' }}>
                                     Результаты не найдены
                                 </span>
                             <div
