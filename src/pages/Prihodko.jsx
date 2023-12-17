@@ -96,7 +96,7 @@ const bio = [
 const photos = [
     {
         img: image1,
-        title: 'Москва',
+        title: 'prihodko.img1',
     },
     {
         img: image2,
@@ -110,11 +110,11 @@ const photos = [
     },
     {
         img: image4,
-        title: 'Евровидение 2011'
+        title: 'prihodko.img4'
     },
     {
         img: image7,
-        title: 'Киев'
+        title: "prihodko.img7"
     },
     {
         img: image5,

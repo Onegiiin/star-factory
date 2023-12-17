@@ -82,11 +82,11 @@ const bio = [
 const photos = [
     {
         img: image1,
-        title: '"Х-фактор"',
+        title: "hasanova.img1"
     },
     {
         img: image2,
-        title: '"Новая фабрика звезд"',
+        title: "hasanova.img2"
     },
     {
         img: image3,
@@ -94,18 +94,18 @@ const photos = [
     },
     {
         img: image4,
-        title: 'Москва'
+        title: "hasanova.img4"
     },
     {
         img: image5,
-        title: 'Ульяновск'
+        title: "hasanova.img5"
     },
     {
         img: image6,
     },
     {
         img: image7,
-        title: 'Сочи'
+        title: "hasanova.img7"
     }
 ];
 const video = "https://www.youtube.com/embed/jBmM53g88t4?si=5-ui1Q6ttM-idYuy";

@@ -17,13 +17,13 @@ const imagePaths = [
 ];
 
 const artistNames = [
-    'Группа "Корни"',
-    'Полина Гагарина',
-    'Ирина Дубцова',
-    'Дмитрий Колдун',
-    'Анастасия Приходько',
-    'Виктория Дайнеко',
-    'Гузель Хасанова'
+    "korni.name",
+    "gagarina.name",
+    "dubcova.name",
+    "koldun.name",
+    "prihodko.name",
+    "daineko.name",
+    "hasanova.name"
 ];
 
 const persUrls = [

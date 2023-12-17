@@ -1,6 +1,7 @@
 import React from 'react';
 import {Card, Typography} from '@mui/material';
 import {NavLink} from "react-router-dom";
+import {useTranslation} from "react-i18next";
 
 const styles = {
     cardContainer: {
@@ -44,15 +45,16 @@ const styles = {
 };
 
 const ListElem = ({param, onClick}) => {
+    const { t, i18n } = useTranslation();
     return (
         <div style={styles.container}>
             <Card sx={{width: 'auto'}} style={styles.card} onClick={onClick}>
                 <div style={styles.cardContainer}>
                     <NavLink to={param.persUrl}>
-                        <img src={param.imageUrl} alt="Артист" style={styles.image}/>
+                        <img src={param.imageUrl} alt={t("artist")} style={styles.image}/>
                         <div style={styles.textOverlay}>
                             <Typography variant="body1" style={styles.text}>
-                                {param.text}
+                                {t(param.text)}
                             </Typography>
                         </div>
                     </NavLink>

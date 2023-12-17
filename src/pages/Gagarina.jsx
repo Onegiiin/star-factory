@@ -201,32 +201,32 @@ const bio = [
 const photos = [
     {
         img: image1,
-        title: 'Победа на RU.TV',
+        title: "gagarina.img1",
     },
     {
         img: image2,
-        title: 'Евровиденье-2015',
+        title: "gagarina.img2",
     },
     {
         img: image3,
-        title: 'Новосибирск',
+        title: "gagarina.img3",
     },
     {
         img: image4,
-        title: 'Челябинск',
+        title: "gagarina.img4",
     },
     {
         img: image5,
-        title: 'Минск',
+        title:"gagarina.img5",
         featured: true
     },
     {
         img: image6,
-        title: 'Шоу "Голос"',
+        title: "gagarina.img6",
     },
     {
         img: image7,
-        title: 'Музыкальное шоу "Навсегда"',
+        title: "gagarina.img7",
     }
 
 ];

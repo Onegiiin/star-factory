@@ -116,7 +116,7 @@ const bio = [
 const photos = [
     {
         img: image1,
-        title: 'Минск',
+        title: "korni.img1",
         featured: true
     },
     {
@@ -124,15 +124,15 @@ const photos = [
     },
     {
         img: image3,
-        title: 'Гродно'
+        title: "korni.img3",
     },
     {
         img: image4,
-        title: 'Брест'
+        title: "korni.img4",
     },
     {
         img: image8,
-        title: 'Псков'
+        title: "korni.img8",
     },
     {
         img: image6,
@@ -140,11 +140,11 @@ const photos = [
     },
     {
         img: image5,
-        title: 'Москва'
+        title: "korni.img5",
     },
     {
         img: image7,
-        title: 'Брест'
+        title: "korni.img7",
     },
 ];
 const video = "https://www.youtube.com/embed/GSjk94YPpaM?si=x1SEHiGXYFlghXBs";

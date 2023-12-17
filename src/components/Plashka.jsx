@@ -1,8 +1,8 @@
 import React from 'react';
 import ClickableImageWithText from './ClickableImageWithText';
 import {NavLink} from "react-router-dom";
-import classes from "./Plashka.module.css";
 import {useTranslation} from "react-i18next";
+import classes from './Plashka.module.css'
 
 
 const images = {
@@ -18,56 +18,57 @@ const images = {
 const WeeklyImage = () => {
     const currentDay = new Date().getDay();
     const { t, i18n } = useTranslation();
+
     const imagesData = [
         {
             imageUrl: images.Card1,
-            text: 'Группа "Корни"',
+            text: "korni.name",
             persUrl: '/korni',
-            shortInfo: 'Российская поп-рок группа, победившая в первом сезоне талант-шоу «Фабрика звёзд». В состав «Корней» тогда вошли Александр Бердников, Алексей Кабанов, Павел Артемьев и Александр Асташёнок. В качестве приза участники бойз-бенда получили символический подарок — микрофон, который использовался в записи «фабричных» композиций, а также контракт с центром Матвиенко, гастрольный тур по России и поездку во Францию на конкурс «Евробест», объединивший призеров международных «Фабрик».',
+            shortInfo: "korni.short",
             born: "2002",
 
         },
         {
             imageUrl: images.Card2,
-            text: 'Полина Гагарина',
+            text: "gagarina.name",
             persUrl: '/gagarina',
-            shortInfo: "Полина Сергеевна Гагарина — российская эстрадная певица, актриса кино, телевидения, озвучивания и дубляжа, композитор и фотомодель.",
-            born: "27 марта 1987",
+            shortInfo: "gagarina.short",
+            born: "gagarina.born",
         },
         {
             imageUrl: images.Card3,
-            text: 'Ирина Дубцова',
+            text: "dubcova.name",
             persUrl: '/dubcova',
-            shortInfo: "Ирина Викторовна Дубцова — российская певица, поэтесса и композитор, бывшая солистка группы «Девочки» (1999—2001). Исполнительница собственных песен (как сольных, так и совместных), выпускница и победительница «Фабрики звёзд — 4», финалистка проекта «Фабрика звёзд. Возвращение».",
-            born: "14 февраля 1982",
+            shortInfo: "dubcova.short",
+            born: "dubcova.born",
         },
         {
             imageUrl: images.Card4,
-            text: 'Дмитрий Колдун ',
+            text: "koldun.name",
             persUrl: '/koldun',
-            shortInfo: "Дми́трий Алекса́ндрович Колду́н — белорусский певец, поэт и композитор. Представлял Беларусь на конкурсе Евровидение 2007 года с песней «Work Your Magic», заняв 6-е место (лучший результат Беларуси за всё время участия в конкурсе).",
-            born: "11 июня 1985",
+            shortInfo: "koldun.short",
+            born: "koldun.born",
         },
         {
             imageUrl: images.Card5,
-            text: 'Анастасия Приходько',
+            text: "prihodko.name",
             persUrl: '/prihodko',
-            shortInfo: "Анастаси́я Константи́новна Прихо́дько — украинская певица, автор песен, общественный и политический деятель, заслуженная артистка Украины (2017).",
-            born: "21 апреля 1987",
+            shortInfo: "prihodko.short",
+            born: "prihodko.born"
         },
         {
             imageUrl: images.Card6    ,
-            text: 'Виктория Дайнеко',
+            text: "daineko.name",
             persUrl: '/daineko',
-            shortInfo: "Викто́рия Петро́вна Дайне́ко — российская певица и актриса. Победительница «Фабрики звёзд-5» (2004) и «Фабрики звёзд. Возвращение» (2011).",
-            born: "12 мая 1987",
+            shortInfo: "daineko.short",
+            born: "daineko.born",
         },
         {
             imageUrl: images.Card7,
-            text: 'Гузель Хасанова',
+            text: "hasanova.name",
             persUrl: '/hasanova',
-            shortInfo: "Гузель Хасанова — яркая и талантливая певица, заявившая о себе в качестве победительницы российского вокального проекта «Новая Фабрика звезд». С тех пор она регулярно радует поклонников новыми хитами, которые никого не оставляют равнодушным.",
-            born: "28 января 1993",
+            shortInfo: "hasanova.short",
+            born:"hasanova.born",
         }
     ];
 
@@ -101,15 +102,16 @@ const WeeklyImage = () => {
     }
 
     return (
-        <div classname={classes.kart} id="homepage">
+        <div id="homepage">
             <h2>{t("plashka.title")}</h2>
             <div className={classes.borderedDivStyle}>
             <NavLink to={currentImageData.persUrl}>
-            <ClickableImageWithText imageUrl={currentImageData.imageUrl} text={currentImageData.text} shortInfo={currentImageData.shortInfo} born={currentImageData.born}/>
+            <ClickableImageWithText imageUrl={currentImageData.imageUrl} text={t(currentImageData.text)}/>
             </NavLink>
-            <p className={classes.content}>
-                {currentImageData.shortInfo} Год рождения: {currentImageData.born}.
-            </p>
+                {currentImageData.text === "korni.name"
+                    ? <p className={classes.content}>{t(currentImageData.shortInfo)} {t("plashka.yearsGroup")}  {t(currentImageData.born)}</p>
+                    : <p className={classes.content}>{t(currentImageData.shortInfo)} {t("plashka.years")}  {t(currentImageData.born)}</p>
+                }
             </div>
         </div>
     );
