@@ -36,3 +36,112 @@ p {
     display: flex;
 }
 
+@media only screen and (max-width: 1400px) {
+    .bgImg {
+        background-size: 1400px;
+        max-width: 1400px;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .bgImg {
+        background-size: 1300px;
+        max-width: 1300px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .bgImg {
+        background-size: 1200px;
+        max-width: 1200px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .bgImg {
+        background-size: 1100px;
+        max-width: 1100px;
+    }
+    .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        --bs-gutter-x: 1.5rem;
+        --bs-gutter-y: 0;
+        width: auto;
+        padding-right: calc(var(--bs-gutter-x) * .5);
+        padding-left: calc(var(--bs-gutter-x) * .5);
+        margin-right: auto;
+        margin-left: 0;
+
+    }
+}
+
+
+@media only screen and (max-width: 992px) {
+    .bgImg {
+        background-size: 992px;
+        max-width: 992px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .bgImg {
+        background-size: 850px;
+        max-width: 850px;
+    }
+
+}
+
+@media only screen and (max-width: 720px) {
+    .bgImg {
+        background-size: 720px;
+        max-width: 720px;
+    }
+
+}
+
+@media only screen and (max-width: 630px) {
+    .bgImg {
+        background-size: 630px;
+        max-width: 630px;
+    }
+
+}
+
+@media only screen and (max-width: 560px) {
+    .bgImg {
+        background-size: 560px;
+        max-width: 560px;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    .bgImg {
+        background-size: 480px;
+        max-width: 480px;
+    }
+
+}
+
+@media only screen and (max-width: 420px) {
+    .bgImg {
+        background-size: 420px;
+        max-width: 420px;
+    }
+
+}
+
+@media only screen and (max-width: 360px) {
+    .bgImg {
+        background-size: 360px;
+        max-width: 360px;
+    }
+
+}
+
+@media only screen and (max-width: 320px) {
+    .bgImg {
+        background-size: 320px;
+        max-width: 320px;
+    }
+
+}

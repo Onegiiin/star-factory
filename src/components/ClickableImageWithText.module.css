@@ -19,11 +19,11 @@
 }
 
 .names {
-    font-family: journalism;
+    font-family: journalism !important;
     color: rgba(255, 215, 0, 1);
     margin: 0;
     display: inline-block;
-    font-size: 150px;
+    font-size: 150px !important;
     white-space: nowrap;
 }
 

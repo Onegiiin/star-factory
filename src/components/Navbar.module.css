@@ -12,6 +12,7 @@
 }
 
 .txt {
+    margin: 0 auto 0 0;
     font-family: Comfortaa;
     font-size: 24px;
     color: gold;
@@ -57,4 +58,93 @@
     --bs-btn-active-color:  rgba(12, 17, 23, 0.8);
     --bs-btn-active-bg: #f4eaff;
     --bs-btn-active-border-color: rgba(12, 17, 23, 0.8);
+
+}
+
+@media only screen and (max-width: 1400px) {
+    .nvbr {
+        width: auto;
+    }
+    .txt {
+        margin: 0 auto 0 0;
+        font-family: Comfortaa;
+        font-size: 24px;
+        color: gold;
+    }
+    .btn {
+        margin-right: 60px;
+        width: 75px !important;
+        --bs-btn-color: #f4eaff;
+        --bs-btn-bg: rgba(12, 17, 23, 0.8);
+        --bs-btn-border-color: #f4eaff;
+        --bs-btn-hover-color: rgba(12, 17, 23, 0.8);
+        --bs-btn-hover-bg: #f4eaff;
+        --bs-btn-hover-border-color: rgba(12, 17, 23, 0.8);
+        --bs-btn-focus-shadow-rgb: 66, 70, 73;
+        --bs-btn-active-color: rgba(12, 17, 23, 0.8);
+        --bs-btn-active-bg: #f4eaff;
+        --bs-btn-active-border-color: rgba(12, 17, 23, 0.8);
+    }
+
+}
+
+@media only screen and (max-width: 1300px) {
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+}
+
+@media only screen and (max-width: 1100px) {
+    .txt {
+        font-family: Comfortaa;
+        font-size: 20px;
+        color: gold;
+    }
+}
+
+
+@media only screen and (max-width: 992px) {
+
+}
+
+@media only screen and (max-width: 850px) {
+
+
+}
+
+@media only screen and (max-width: 720px) {
+
+
+}
+
+@media only screen and (max-width: 630px) {
+
+
+}
+
+@media only screen and (max-width: 560px) {
+
+
+}
+
+@media only screen and (max-width: 480px) {
+
+
+}
+
+@media only screen and (max-width: 420px) {
+
+
+}
+
+@media only screen and (max-width: 360px) {
+
+
+}
+
+@media only screen and (max-width: 320px) {
+
+
 }
