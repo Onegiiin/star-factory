@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/star-factory/static/css/main.ff6161e8.css",
+    "main.js": "/star-factory/static/js/main.be857d2f.js",
+    "static/media/dainekoback.png": "/star-factory/static/media/dainekoback.52721f4add42318f4b76.png",
+    "static/media/gagarinaback.png": "/star-factory/static/media/gagarinaback.2b5d7cbba68c857809fd.png",
+    "static/media/korniback.png": "/star-factory/static/media/korniback.9f9752218ff2b4705a00.png",
+    "static/media/koldunback.png": "/star-factory/static/media/koldunback.1952408ca890fe52291c.png",
+    "static/media/back2.png": "/star-factory/static/media/back2.09735593001e82c66e62.png",
+    "static/media/back1.png": "/star-factory/static/media/back1.6fbda3662f954ec124fc.png",
+    "static/media/dubcovaback.png": "/star-factory/static/media/dubcovaback.7655b1bb2b4c6d6fe30b.png",
+    "static/media/prigodkoback.png": "/star-factory/static/media/prigodkoback.05aca3e25fcce6223930.png",
+    "static/media/hasanovaback.png": "/star-factory/static/media/hasanovaback.052df58e2343d75b6583.png",
+    "static/media/4.jpg": "/star-factory/static/media/4.723614de7def872728e3.jpg",
+    "static/media/7.jpg": "/star-factory/static/media/7.3024a7bb29a394103709.jpg",
+    "static/media/Card1.jpg": "/star-factory/static/media/Card1.420eda23cda8e2d6f2dd.jpg",
+    "static/media/6.jpg": "/star-factory/static/media/6.b9747c86451cb4659a6f.jpg",
+    "static/media/Card3.jpg": "/star-factory/static/media/Card3.ca8bd517cdc469114a3b.jpg",
+    "static/media/Card2.jpg": "/star-factory/static/media/Card2.8e728cd87f076a99c634.jpg",
+    "static/media/back1deves.png": "/star-factory/static/media/back1deves.2efc80d389959c0fdfa6.png",
+    "static/media/2.jpg": "/star-factory/static/media/2.9bfd7ec4a94884e22af2.jpg",
+    "static/media/5.jpg": "/star-factory/static/media/5.843b9a39cc4ac1277bdf.jpg",
+    "static/media/3.jpg": "/star-factory/static/media/3.3544962fc109483ba1e4.jpg",
+    "static/media/8.jpg": "/star-factory/static/media/8.6254915673113a810273.jpg",
+    "static/media/Comfortaa.ttf": "/star-factory/static/media/Comfortaa.6704d0fdb46a0ef3422e.ttf",
+    "static/media/1.jpg": "/star-factory/static/media/1.bbad6c86ed4759d1a544.jpg",
+    "static/media/Card4.jpg": "/star-factory/static/media/Card4.fffa6da947c5f5dce983.jpg",
+    "static/media/Card6.jpg": "/star-factory/static/media/Card6.5049ce41cb115c34a321.jpg",
+    "static/media/Card5.jpg": "/star-factory/static/media/Card5.a0735c8339adec740f19.jpg",
+    "static/media/logo.png": "/star-factory/static/media/logo.d399ccf157b0354350da.png",
+    "static/media/journalism.ttf": "/star-factory/static/media/journalism.dc03ac644bbf65b743f4.ttf",
+    "static/media/Card7.jpg": "/star-factory/static/media/Card7.5e62cd35d248fb4183e6.jpg",
+    "static/media/Metropolis 1920.otf": "/star-factory/static/media/Metropolis 1920.ba2ac8d6070b8525389d.otf",
+    "index.html": "/star-factory/index.html",
+    "static/media/getFetch.cjs": "/star-factory/static/media/getFetch.40f37ddea2378391108f.cjs",
+    "main.ff6161e8.css.map": "/star-factory/static/css/main.ff6161e8.css.map",
+    "main.be857d2f.js.map": "/star-factory/static/js/main.be857d2f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ff6161e8.css",
+    "static/js/main.be857d2f.js"
+  ]
+}
